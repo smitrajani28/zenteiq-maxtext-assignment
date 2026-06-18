@@ -1,0 +1,1255 @@
+WARNING:absl:Grain multiprocess worker profiling requires jaxlib extension version 448 or later (jaxlib >= 0.11.0). Current version: 439.
+[transformers] DeepseekV32Config got `key=rope_scaling` in kwargs but hasn't set it as attribute. For RoPE standardization you need to set `self.rope_parameters` in model's config. 
+2026-06-16 15:42:14.989883: E external/local_xla/xla/stream_executor/cuda/cuda_platform.cc:51] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+I0616 15:42:15.289290 20374333747200 max_utils.py:285] Attempting to initialize the jax distributed system for TPU backend...
+I0616 15:42:15.414589 20374333747200 xla_bridge.py:822] Unable to initialize backend 'tpu': ABORTED: Internal error when accessing libtpu multi-process lockfile. Run "$ sudo rm /tmp/libtpu_lockfile".
+I0616 15:42:15.416858 20374333747200 pyconfig.py:559] Config param abort_on_inf_loss: True
+I0616 15:42:15.416972 20374333747200 pyconfig.py:559] Config param abort_on_nan_loss: True
+I0616 15:42:15.417019 20374333747200 pyconfig.py:559] Config param act_quantization_calibration_method: absmax
+I0616 15:42:15.417057 20374333747200 pyconfig.py:559] Config param activation_dropout_for_audio: 0.0
+I0616 15:42:15.417094 20374333747200 pyconfig.py:559] Config param activation_function_for_audio: gelu
+I0616 15:42:15.417168 20374333747200 pyconfig.py:559] Config param activations_in_float32: False
+I0616 15:42:15.417206 20374333747200 pyconfig.py:559] Config param adam_b1: 0.9
+I0616 15:42:15.417239 20374333747200 pyconfig.py:559] Config param adam_b2: 0.95
+I0616 15:42:15.417272 20374333747200 pyconfig.py:559] Config param adam_eps: 1e-08
+I0616 15:42:15.417307 20374333747200 pyconfig.py:559] Config param adam_eps_root: 0.0
+I0616 15:42:15.417338 20374333747200 pyconfig.py:559] Config param adam_weight_decay: 0.1
+I0616 15:42:15.417367 20374333747200 pyconfig.py:559] Config param adamw_mask: []
+I0616 15:42:15.417396 20374333747200 pyconfig.py:559] Config param add_bos: True
+I0616 15:42:15.417425 20374333747200 pyconfig.py:559] Config param add_eos: True
+I0616 15:42:15.417453 20374333747200 pyconfig.py:559] Config param allow_split_physical_axes: False
+I0616 15:42:15.417481 20374333747200 pyconfig.py:559] Config param ar_cache_axis_order: 1,2,0,3
+I0616 15:42:15.417509 20374333747200 pyconfig.py:559] Config param async_checkpointing: True
+I0616 15:42:15.417537 20374333747200 pyconfig.py:559] Config param async_scheduling: False
+I0616 15:42:15.417565 20374333747200 pyconfig.py:559] Config param attention: autoselected
+I0616 15:42:15.417592 20374333747200 pyconfig.py:559] Config param attention_bias: False
+I0616 15:42:15.417620 20374333747200 pyconfig.py:559] Config param attention_dropout_for_audio: 0.0
+I0616 15:42:15.417651 20374333747200 pyconfig.py:559] Config param attention_out: RematLocation.REMAT
+I0616 15:42:15.417685 20374333747200 pyconfig.py:559] Config param attention_output_dim: -1
+I0616 15:42:15.417714 20374333747200 pyconfig.py:559] Config param attention_sink: False
+I0616 15:42:15.417743 20374333747200 pyconfig.py:559] Config param attention_type: global
+I0616 15:42:15.417772 20374333747200 pyconfig.py:559] Config param attn_logits_soft_cap: None
+I0616 15:42:15.417800 20374333747200 pyconfig.py:559] Config param attn_module_name: None
+I0616 15:42:15.417827 20374333747200 pyconfig.py:559] Config param audio_path: 
+I0616 15:42:15.417855 20374333747200 pyconfig.py:559] Config param audio_placeholder: <|audio|>
+I0616 15:42:15.417882 20374333747200 pyconfig.py:559] Config param autoregressive_decode_assert: 
+I0616 15:42:15.417909 20374333747200 pyconfig.py:559] Config param base_config: None
+I0616 15:42:15.417936 20374333747200 pyconfig.py:559] Config param base_emb_dim: 1024
+I0616 15:42:15.417964 20374333747200 pyconfig.py:559] Config param base_mlp_dim: 3072
+I0616 15:42:15.417991 20374333747200 pyconfig.py:559] Config param base_moe_mlp_dim: -1
+I0616 15:42:15.418018 20374333747200 pyconfig.py:559] Config param base_num_decoder_layers: 28
+I0616 15:42:15.418045 20374333747200 pyconfig.py:559] Config param base_num_kv_heads: 8
+I0616 15:42:15.418083 20374333747200 pyconfig.py:559] Config param base_num_query_heads: 16
+I0616 15:42:15.418125 20374333747200 pyconfig.py:559] Config param base_output_directory: /tmp/maxtext_logs
+I0616 15:42:15.418203 20374333747200 pyconfig.py:559] Config param batch_size: 1
+I0616 15:42:15.418231 20374333747200 pyconfig.py:559] Config param batch_split_factor: 1
+I0616 15:42:15.418258 20374333747200 pyconfig.py:559] Config param beta_fast: 32
+I0616 15:42:15.418283 20374333747200 pyconfig.py:559] Config param beta_slow: 1
+I0616 15:42:15.418310 20374333747200 pyconfig.py:559] Config param bwd_quantization_calibration_method: absmax
+I0616 15:42:15.418336 20374333747200 pyconfig.py:559] Config param capacity_factor: -1.0
+I0616 15:42:15.418363 20374333747200 pyconfig.py:559] Config param cast_logits_to_fp32: True
+I0616 15:42:15.418389 20374333747200 pyconfig.py:559] Config param chat_template: 
+I0616 15:42:15.418416 20374333747200 pyconfig.py:559] Config param chat_template_path: 
+I0616 15:42:15.418446 20374333747200 pyconfig.py:559] Config param check_vma: False
+I0616 15:42:15.418472 20374333747200 pyconfig.py:559] Config param checkpoint_conversion_fn: None
+I0616 15:42:15.418498 20374333747200 pyconfig.py:559] Config param checkpoint_dir: /tmp/maxtext_logs/qwen3_smoke_test/checkpoints/
+I0616 15:42:15.418525 20374333747200 pyconfig.py:559] Config param checkpoint_is_quantized: False
+I0616 15:42:15.418553 20374333747200 pyconfig.py:559] Config param checkpoint_period: 10000
+I0616 15:42:15.418580 20374333747200 pyconfig.py:559] Config param checkpoint_storage_concurrent_gb: 96
+I0616 15:42:15.418605 20374333747200 pyconfig.py:559] Config param checkpoint_storage_target_data_file_size_bytes: 2147483648
+I0616 15:42:15.418636 20374333747200 pyconfig.py:559] Config param checkpoint_storage_use_ocdbt: True
+I0616 15:42:15.418677 20374333747200 pyconfig.py:559] Config param checkpoint_storage_use_zarr3: True
+I0616 15:42:15.418707 20374333747200 pyconfig.py:559] Config param checkpoint_todelete_full_path: None
+I0616 15:42:15.418733 20374333747200 pyconfig.py:559] Config param checkpoint_todelete_subdir: None
+I0616 15:42:15.418759 20374333747200 pyconfig.py:559] Config param chips_per_vm: 4
+I0616 15:42:15.418785 20374333747200 pyconfig.py:559] Config param chunk_attn_window_size: 0
+I0616 15:42:15.418810 20374333747200 pyconfig.py:559] Config param colocated_python_checkpointing: False
+I0616 15:42:15.418836 20374333747200 pyconfig.py:559] Config param colocated_python_data_input: False
+I0616 15:42:15.418861 20374333747200 pyconfig.py:559] Config param compile_topology: 
+I0616 15:42:15.418886 20374333747200 pyconfig.py:559] Config param compile_topology_num_slices: -1
+I0616 15:42:15.418912 20374333747200 pyconfig.py:559] Config param compile_xla_flags: 
+I0616 15:42:15.418937 20374333747200 pyconfig.py:559] Config param compiled_trainstep_file: 
+I0616 15:42:15.418962 20374333747200 pyconfig.py:559] Config param compress_ratios: []
+I0616 15:42:15.418988 20374333747200 pyconfig.py:559] Config param compressed_rope_max_timescale: 160000
+I0616 15:42:15.419014 20374333747200 pyconfig.py:559] Config param compute_axis_order: 0,1,2,3
+I0616 15:42:15.419039 20374333747200 pyconfig.py:559] Config param constant_bound_config: []
+I0616 15:42:15.419065 20374333747200 pyconfig.py:559] Config param context: RematLocation.REMAT
+I0616 15:42:15.419094 20374333747200 pyconfig.py:559] Config param context_parallel_load_balance: True
+I0616 15:42:15.419167 20374333747200 pyconfig.py:559] Config param context_parallel_reorder_strategy: ReorderStrategy.AUTO
+I0616 15:42:15.419205 20374333747200 pyconfig.py:559] Config param context_parallel_size: 1
+I0616 15:42:15.419232 20374333747200 pyconfig.py:559] Config param context_parallel_strategy: all_gather
+I0616 15:42:15.419258 20374333747200 pyconfig.py:559] Config param context_sharding: context
+I0616 15:42:15.419285 20374333747200 pyconfig.py:559] Config param conv_chunksize_for_audio: 500
+I0616 15:42:15.419310 20374333747200 pyconfig.py:559] Config param conv_stride_for_vit: 14
+I0616 15:42:15.419336 20374333747200 pyconfig.py:559] Config param convert_checkpoint_if_possible: False
+I0616 15:42:15.419368 20374333747200 pyconfig.py:559] Config param cost_estimate_flops_bwd: -1
+I0616 15:42:15.419394 20374333747200 pyconfig.py:559] Config param cost_estimate_flops_fwd: -1
+I0616 15:42:15.419420 20374333747200 pyconfig.py:559] Config param custom_mesh: 
+I0616 15:42:15.419445 20374333747200 pyconfig.py:559] Config param custom_mesh_and_rule: CustomRule.DEFAULT
+I0616 15:42:15.419474 20374333747200 pyconfig.py:559] Config param d_model_for_audio: 256
+I0616 15:42:15.419499 20374333747200 pyconfig.py:559] Config param data_sharding: (('data', 'stage', 'fsdp', 'fsdp_transpose', 'context', 'context_autoregressive', 'tensor', 'tensor_transpose', 'tensor_sequence', 'expert', 'autoregressive'),)
+I0616 15:42:15.419532 20374333747200 pyconfig.py:559] Config param data_shuffle_seed: 0
+I0616 15:42:15.419557 20374333747200 pyconfig.py:559] Config param dataset_name: c4/en:3.1.0
+I0616 15:42:15.419583 20374333747200 pyconfig.py:559] Config param dataset_path: 
+I0616 15:42:15.419608 20374333747200 pyconfig.py:559] Config param dataset_processor_path: 
+I0616 15:42:15.419636 20374333747200 pyconfig.py:559] Config param dataset_type: DatasetType.SYNTHETIC
+I0616 15:42:15.419664 20374333747200 pyconfig.py:559] Config param dcn_autoregressive_parallelism: 1
+I0616 15:42:15.419689 20374333747200 pyconfig.py:559] Config param dcn_context_autoregressive_parallelism: 1
+I0616 15:42:15.419714 20374333747200 pyconfig.py:559] Config param dcn_context_parallelism: 1
+I0616 15:42:15.419739 20374333747200 pyconfig.py:559] Config param dcn_data_parallelism: -1
+I0616 15:42:15.419764 20374333747200 pyconfig.py:559] Config param dcn_diloco_parallelism: 1
+I0616 15:42:15.419789 20374333747200 pyconfig.py:559] Config param dcn_expert_parallelism: 1
+I0616 15:42:15.419814 20374333747200 pyconfig.py:559] Config param dcn_fsdp_parallelism: 1
+I0616 15:42:15.419839 20374333747200 pyconfig.py:559] Config param dcn_fsdp_transpose_parallelism: 1
+I0616 15:42:15.419864 20374333747200 pyconfig.py:559] Config param dcn_parallelism: [1, -1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+I0616 15:42:15.419891 20374333747200 pyconfig.py:559] Config param dcn_pipeline_parallelism: 1
+I0616 15:42:15.419916 20374333747200 pyconfig.py:559] Config param dcn_sequence_parallelism: 1
+I0616 15:42:15.419941 20374333747200 pyconfig.py:559] Config param dcn_tensor_parallelism: 1
+I0616 15:42:15.419966 20374333747200 pyconfig.py:559] Config param dcn_tensor_sequence_parallelism: 1
+I0616 15:42:15.419991 20374333747200 pyconfig.py:559] Config param dcn_tensor_transpose_parallelism: 1
+I0616 15:42:15.420015 20374333747200 pyconfig.py:559] Config param debug: {'rl': False}
+I0616 15:42:15.420042 20374333747200 pyconfig.py:559] Config param debug_converter: False
+I0616 15:42:15.420067 20374333747200 pyconfig.py:559] Config param debug_sharding: False
+I0616 15:42:15.420093 20374333747200 pyconfig.py:559] Config param decode_sampling_nucleus_p: -1
+I0616 15:42:15.420136 20374333747200 pyconfig.py:559] Config param decode_sampling_strategy: SamplingStrategy.GREEDY
+I0616 15:42:15.420171 20374333747200 pyconfig.py:559] Config param decode_sampling_temperature: 1.0
+I0616 15:42:15.420198 20374333747200 pyconfig.py:559] Config param decode_sampling_top_k: 0
+I0616 15:42:15.420223 20374333747200 pyconfig.py:559] Config param decoder_block: DecoderBlockType.QWEN3
+I0616 15:42:15.420252 20374333747200 pyconfig.py:559] Config param decoder_layer_input: RematLocation.DEVICE
+I0616 15:42:15.420279 20374333747200 pyconfig.py:559] Config param deepstack_visual_indexes_for_vit: []
+I0616 15:42:15.420305 20374333747200 pyconfig.py:559] Config param degenerate_group_masking: True
+I0616 15:42:15.420330 20374333747200 pyconfig.py:559] Config param dense_init_scale: 1.0
+I0616 15:42:15.420362 20374333747200 pyconfig.py:559] Config param diloco_outer_lr: 0.3
+I0616 15:42:15.420394 20374333747200 pyconfig.py:559] Config param diloco_outer_momentum: 0.9
+I0616 15:42:15.420421 20374333747200 pyconfig.py:559] Config param diloco_sync_period: 36
+I0616 15:42:15.420448 20374333747200 pyconfig.py:559] Config param distill_alpha: 0.5
+I0616 15:42:15.420479 20374333747200 pyconfig.py:559] Config param distill_alpha_end: None
+I0616 15:42:15.420506 20374333747200 pyconfig.py:559] Config param distill_alpha_schedule: constant
+I0616 15:42:15.420532 20374333747200 pyconfig.py:559] Config param distill_beta: 0.0
+I0616 15:42:15.420558 20374333747200 pyconfig.py:559] Config param distill_beta_end: None
+I0616 15:42:15.420583 20374333747200 pyconfig.py:559] Config param distill_beta_schedule: constant
+I0616 15:42:15.420608 20374333747200 pyconfig.py:559] Config param distill_feature_loss_type: cosine
+I0616 15:42:15.420636 20374333747200 pyconfig.py:559] Config param distill_layer_indices: None
+I0616 15:42:15.420662 20374333747200 pyconfig.py:559] Config param distill_student_weights_share_map: {}
+I0616 15:42:15.420688 20374333747200 pyconfig.py:559] Config param distill_temperature: 1.0
+I0616 15:42:15.420714 20374333747200 pyconfig.py:559] Config param distill_temperature_end: None
+I0616 15:42:15.420739 20374333747200 pyconfig.py:559] Config param distill_temperature_schedule: constant
+I0616 15:42:15.420764 20374333747200 pyconfig.py:559] Config param distill_weights_copy_map: {}
+I0616 15:42:15.420790 20374333747200 pyconfig.py:559] Config param downsample_hidden_size_for_audio: 256
+I0616 15:42:15.420816 20374333747200 pyconfig.py:559] Config param dpo: {'algo': 'dpo', 'dpo_beta': 0.1, 'orpo_lambda': 0.1, 'dpo_label_smoothing': 0.0, 'max_prompt_length': None}
+I0616 15:42:15.420846 20374333747200 pyconfig.py:559] Config param dq_reduction_steps: 0
+I0616 15:42:15.420872 20374333747200 pyconfig.py:559] Config param dropout_rate: 0.0
+I0616 15:42:15.420897 20374333747200 pyconfig.py:559] Config param dtype: bfloat16
+I0616 15:42:15.420946 20374333747200 pyconfig.py:559] Config param dtype_mm: float32
+I0616 15:42:15.420974 20374333747200 pyconfig.py:559] Config param dump_hlo: False
+I0616 15:42:15.421000 20374333747200 pyconfig.py:559] Config param dump_hlo_delete_local_after: True
+I0616 15:42:15.421025 20374333747200 pyconfig.py:559] Config param dump_hlo_gcs_dir: /tmp/maxtext_logs/qwen3_smoke_test/xla_dump
+I0616 15:42:15.421050 20374333747200 pyconfig.py:559] Config param dump_hlo_local_dir: /tmp/xla_dump/
+I0616 15:42:15.421076 20374333747200 pyconfig.py:559] Config param dump_hlo_local_module_name: jit_train_step
+I0616 15:42:15.421101 20374333747200 pyconfig.py:559] Config param dump_hlo_module_name: jit_train_step
+I0616 15:42:15.421148 20374333747200 pyconfig.py:559] Config param dump_hlo_upload_all: False
+I0616 15:42:15.421175 20374333747200 pyconfig.py:559] Config param dump_hlo_xla_flags: --xla_dump_to=/tmp/xla_dump/ --xla_dump_large_constants --xla_dump_hlo_module_re=jit_train_step
+I0616 15:42:15.421200 20374333747200 pyconfig.py:559] Config param dump_jaxpr: False
+I0616 15:42:15.421226 20374333747200 pyconfig.py:559] Config param dump_jaxpr_delete_local_after: True
+I0616 15:42:15.421251 20374333747200 pyconfig.py:559] Config param dump_jaxpr_gcs_dir: /tmp/maxtext_logs/qwen3_smoke_test/jaxpr_dump
+I0616 15:42:15.421277 20374333747200 pyconfig.py:559] Config param dump_jaxpr_local_dir: /tmp/jaxpr_dump/
+I0616 15:42:15.421302 20374333747200 pyconfig.py:559] Config param dump_step: -1
+I0616 15:42:15.421327 20374333747200 pyconfig.py:559] Config param elastic_enabled: False
+I0616 15:42:15.421354 20374333747200 pyconfig.py:559] Config param elastic_max_retries: 10
+I0616 15:42:15.421381 20374333747200 pyconfig.py:559] Config param elastic_min_slice_count: -1
+I0616 15:42:15.421406 20374333747200 pyconfig.py:559] Config param elastic_timeout_seconds: 300
+I0616 15:42:15.421431 20374333747200 pyconfig.py:559] Config param emb_dim: 1024
+I0616 15:42:15.421456 20374333747200 pyconfig.py:559] Config param enable_autocheckpoint: False
+I0616 15:42:15.421482 20374333747200 pyconfig.py:559] Config param enable_checkpoint_cloud_logger: False
+I0616 15:42:15.421507 20374333747200 pyconfig.py:559] Config param enable_checkpointing: False
+I0616 15:42:15.421532 20374333747200 pyconfig.py:559] Config param enable_continuous_checkpointing: False
+I0616 15:42:15.421562 20374333747200 pyconfig.py:559] Config param enable_data_shuffling: True
+I0616 15:42:15.421587 20374333747200 pyconfig.py:559] Config param enable_diloco: False
+I0616 15:42:15.421612 20374333747200 pyconfig.py:559] Config param enable_dp_attention: False
+I0616 15:42:15.421639 20374333747200 pyconfig.py:559] Config param enable_dropout: False
+I0616 15:42:15.421665 20374333747200 pyconfig.py:559] Config param enable_emergency_checkpoint: False
+I0616 15:42:15.421720 20374333747200 pyconfig.py:559] Config param enable_expert_parallel: False
+I0616 15:42:15.421745 20374333747200 pyconfig.py:559] Config param enable_gcp_goodput_metrics: True
+I0616 15:42:15.421769 20374333747200 pyconfig.py:559] Config param enable_gcp_step_deviation_metrics: True
+I0616 15:42:15.421794 20374333747200 pyconfig.py:559] Config param enable_goodput_recording: False
+I0616 15:42:15.421819 20374333747200 pyconfig.py:559] Config param enable_jax_profiler: False
+I0616 15:42:15.421844 20374333747200 pyconfig.py:559] Config param enable_llm_inference_pool: False
+I0616 15:42:15.421869 20374333747200 pyconfig.py:559] Config param enable_mhc_lite: False
+I0616 15:42:15.421894 20374333747200 pyconfig.py:559] Config param enable_model_warmup: False
+I0616 15:42:15.421918 20374333747200 pyconfig.py:559] Config param enable_multi_tier_checkpointing: False
+I0616 15:42:15.421943 20374333747200 pyconfig.py:559] Config param enable_nnx: False
+I0616 15:42:15.421968 20374333747200 pyconfig.py:559] Config param enable_orbax_v1: False
+I0616 15:42:15.421993 20374333747200 pyconfig.py:559] Config param enable_padding_causal_mask: True
+I0616 15:42:15.422019 20374333747200 pyconfig.py:559] Config param enable_pathways_goodput: False
+I0616 15:42:15.422044 20374333747200 pyconfig.py:559] Config param enable_prefix_caching: False
+I0616 15:42:15.422069 20374333747200 pyconfig.py:559] Config param enable_rampup_batch_size: False
+I0616 15:42:15.422093 20374333747200 pyconfig.py:559] Config param enable_single_controller: False
+I0616 15:42:15.422137 20374333747200 pyconfig.py:559] Config param enable_single_replica_ckpt_restoring: False
+I0616 15:42:15.422164 20374333747200 pyconfig.py:559] Config param enable_tensorboard: True
+I0616 15:42:15.422190 20374333747200 pyconfig.py:559] Config param enable_tpu_profiling_options: False
+I0616 15:42:15.422215 20374333747200 pyconfig.py:559] Config param enable_tunix_perf_metrics: False
+I0616 15:42:15.422240 20374333747200 pyconfig.py:559] Config param encoder_attention_heads_for_audio: 4
+I0616 15:42:15.422265 20374333747200 pyconfig.py:559] Config param encoder_ffn_dim_for_audio: 512
+I0616 15:42:15.422293 20374333747200 pyconfig.py:559] Config param encoder_layers_for_audio: 2
+I0616 15:42:15.422318 20374333747200 pyconfig.py:559] Config param engram: RematLocation.REMAT
+I0616 15:42:15.422346 20374333747200 pyconfig.py:559] Config param engram_head_dim: 1280
+I0616 15:42:15.422371 20374333747200 pyconfig.py:559] Config param engram_kernel_size: 4
+I0616 15:42:15.422397 20374333747200 pyconfig.py:559] Config param engram_layers: []
+I0616 15:42:15.422422 20374333747200 pyconfig.py:559] Config param engram_max_ngram_size: 3
+I0616 15:42:15.422447 20374333747200 pyconfig.py:559] Config param engram_num_heads: 8
+I0616 15:42:15.422472 20374333747200 pyconfig.py:559] Config param engram_seed: 0
+I0616 15:42:15.422497 20374333747200 pyconfig.py:559] Config param engram_vocab_bases: []
+I0616 15:42:15.422522 20374333747200 pyconfig.py:559] Config param epsilon_high: None
+I0616 15:42:15.422547 20374333747200 pyconfig.py:559] Config param eval_batch_size: -1
+I0616 15:42:15.422587 20374333747200 pyconfig.py:559] Config param eval_corr_lst: False
+I0616 15:42:15.422612 20374333747200 pyconfig.py:559] Config param eval_data_columns: ['text']
+I0616 15:42:15.422641 20374333747200 pyconfig.py:559] Config param eval_dataset_name: c4/en:3.1.0
+I0616 15:42:15.422666 20374333747200 pyconfig.py:559] Config param eval_image_column: image
+I0616 15:42:15.422691 20374333747200 pyconfig.py:559] Config param eval_interval: -1
+I0616 15:42:15.422723 20374333747200 pyconfig.py:559] Config param eval_make_lst: False
+I0616 15:42:15.422749 20374333747200 pyconfig.py:559] Config param eval_mode: pass
+I0616 15:42:15.422774 20374333747200 pyconfig.py:559] Config param eval_per_device_batch_size: 1
+I0616 15:42:15.422803 20374333747200 pyconfig.py:559] Config param eval_sampling_strategy: greedy
+I0616 15:42:15.422829 20374333747200 pyconfig.py:559] Config param eval_split: validation
+I0616 15:42:15.422856 20374333747200 pyconfig.py:559] Config param eval_steps: -1
+I0616 15:42:15.422894 20374333747200 pyconfig.py:559] Config param expansion_factor_real_data: -1.0
+I0616 15:42:15.422923 20374333747200 pyconfig.py:559] Config param final_logits_soft_cap: None
+I0616 15:42:15.422948 20374333747200 pyconfig.py:559] Config param first_num_dense_layers: 0
+I0616 15:42:15.422973 20374333747200 pyconfig.py:559] Config param first_num_hash_layers: 0
+I0616 15:42:15.422998 20374333747200 pyconfig.py:559] Config param float32_gate_logits: False
+I0616 15:42:15.423023 20374333747200 pyconfig.py:559] Config param float32_logits: False
+I0616 15:42:15.423048 20374333747200 pyconfig.py:559] Config param float32_qk_product: False
+I0616 15:42:15.423073 20374333747200 pyconfig.py:559] Config param float32_weight_sum: True
+I0616 15:42:15.423098 20374333747200 pyconfig.py:559] Config param force_q_layout: False
+I0616 15:42:15.423143 20374333747200 pyconfig.py:559] Config param force_unroll: False
+I0616 15:42:15.423170 20374333747200 pyconfig.py:559] Config param formatting_func_kwargs: {}
+I0616 15:42:15.423195 20374333747200 pyconfig.py:559] Config param formatting_func_path: 
+I0616 15:42:15.423220 20374333747200 pyconfig.py:559] Config param freeze_audio_encoder_params: True
+I0616 15:42:15.423245 20374333747200 pyconfig.py:559] Config param freeze_vision_encoder_params: True
+I0616 15:42:15.423270 20374333747200 pyconfig.py:559] Config param fuse_expert_scales: False
+I0616 15:42:15.423295 20374333747200 pyconfig.py:559] Config param fused_mlp: False
+I0616 15:42:15.423322 20374333747200 pyconfig.py:559] Config param fused_qkv: False
+I0616 15:42:15.423347 20374333747200 pyconfig.py:559] Config param gcs_debug_path: 
+I0616 15:42:15.423372 20374333747200 pyconfig.py:559] Config param gcs_metrics: False
+I0616 15:42:15.423397 20374333747200 pyconfig.py:559] Config param gdn_chunk_size: 64
+I0616 15:42:15.423422 20374333747200 pyconfig.py:559] Config param gdn_conv_kernel_dim: 4
+I0616 15:42:15.423447 20374333747200 pyconfig.py:559] Config param gdn_key_head_dim: 128
+I0616 15:42:15.423472 20374333747200 pyconfig.py:559] Config param gdn_num_key_heads: 16
+I0616 15:42:15.423496 20374333747200 pyconfig.py:559] Config param gdn_num_value_heads: 32
+I0616 15:42:15.423521 20374333747200 pyconfig.py:559] Config param gdn_value_head_dim: 128
+I0616 15:42:15.423547 20374333747200 pyconfig.py:559] Config param generate_padding_batch_eval: False
+I0616 15:42:15.423571 20374333747200 pyconfig.py:559] Config param generate_padding_batch_train: False
+I0616 15:42:15.423596 20374333747200 pyconfig.py:559] Config param generate_slice: v5e-16
+I0616 15:42:15.423621 20374333747200 pyconfig.py:559] Config param generation_configs: {}
+I0616 15:42:15.423650 20374333747200 pyconfig.py:559] Config param global_batch_size_to_eval_on: 1
+I0616 15:42:15.423676 20374333747200 pyconfig.py:559] Config param global_batch_size_to_load: 1
+I0616 15:42:15.423701 20374333747200 pyconfig.py:559] Config param global_batch_size_to_load_eval: 1
+I0616 15:42:15.423725 20374333747200 pyconfig.py:559] Config param global_batch_size_to_load_increment: None
+I0616 15:42:15.423750 20374333747200 pyconfig.py:559] Config param global_batch_size_to_load_start: None
+I0616 15:42:15.423776 20374333747200 pyconfig.py:559] Config param global_batch_size_to_train_on: 1
+I0616 15:42:15.423802 20374333747200 pyconfig.py:559] Config param global_head_dim: 0
+I0616 15:42:15.423828 20374333747200 pyconfig.py:559] Config param global_num_kv_heads: 0
+I0616 15:42:15.423854 20374333747200 pyconfig.py:559] Config param global_parameter_scale: 1
+I0616 15:42:15.423879 20374333747200 pyconfig.py:559] Config param global_rampup_samples: 500
+I0616 15:42:15.423909 20374333747200 pyconfig.py:559] Config param global_rope_max_timescale: -1
+I0616 15:42:15.423935 20374333747200 pyconfig.py:559] Config param global_rope_proportion: 0.25
+I0616 15:42:15.423976 20374333747200 pyconfig.py:559] Config param goodput_upload_interval_seconds: 30
+I0616 15:42:15.424003 20374333747200 pyconfig.py:559] Config param grad_dtype: float32
+I0616 15:42:15.424066 20374333747200 pyconfig.py:559] Config param gradient_accumulation_steps: 1
+I0616 15:42:15.424094 20374333747200 pyconfig.py:559] Config param gradient_clipping_threshold: 1.0
+I0616 15:42:15.424140 20374333747200 pyconfig.py:559] Config param grain_data_source_max_workers: 16
+I0616 15:42:15.424168 20374333747200 pyconfig.py:559] Config param grain_eval_files: 
+I0616 15:42:15.424194 20374333747200 pyconfig.py:559] Config param grain_file_type: arrayrecord
+I0616 15:42:15.424219 20374333747200 pyconfig.py:559] Config param grain_num_threads: 16
+I0616 15:42:15.424244 20374333747200 pyconfig.py:559] Config param grain_num_threads_eval: 16
+I0616 15:42:15.424270 20374333747200 pyconfig.py:559] Config param grain_packing_type: first_fit
+I0616 15:42:15.424295 20374333747200 pyconfig.py:559] Config param grain_per_worker_buffer_size: 1
+I0616 15:42:15.424320 20374333747200 pyconfig.py:559] Config param grain_per_worker_buffer_size_eval: 1
+I0616 15:42:15.424345 20374333747200 pyconfig.py:559] Config param grain_prefetch_buffer_size: 500
+I0616 15:42:15.424369 20374333747200 pyconfig.py:559] Config param grain_prefetch_buffer_size_eval: 500
+I0616 15:42:15.424395 20374333747200 pyconfig.py:559] Config param grain_ram_budget_mb: 1024
+I0616 15:42:15.424419 20374333747200 pyconfig.py:559] Config param grain_shuffle_buffer_size: 100
+I0616 15:42:15.424444 20374333747200 pyconfig.py:559] Config param grain_train_files: 
+I0616 15:42:15.424469 20374333747200 pyconfig.py:559] Config param grain_train_mixture_config_path: 
+I0616 15:42:15.424493 20374333747200 pyconfig.py:559] Config param grain_use_elastic_iterator: False
+I0616 15:42:15.424518 20374333747200 pyconfig.py:559] Config param grain_worker_count: 1
+I0616 15:42:15.424542 20374333747200 pyconfig.py:559] Config param grain_worker_count_eval: 1
+I0616 15:42:15.424568 20374333747200 pyconfig.py:559] Config param grpo_beta: 0.08
+I0616 15:42:15.424594 20374333747200 pyconfig.py:559] Config param grpo_epsilon: 0.2
+I0616 15:42:15.424619 20374333747200 pyconfig.py:559] Config param hardware: tpu
+I0616 15:42:15.424648 20374333747200 pyconfig.py:559] Config param hbm_utilization_vllm: 0.72
+I0616 15:42:15.424673 20374333747200 pyconfig.py:559] Config param head_dim: 128
+I0616 15:42:15.424698 20374333747200 pyconfig.py:559] Config param heartbeat_reporting_interval_in_seconds: 5
+I0616 15:42:15.424723 20374333747200 pyconfig.py:559] Config param hf_data_dir: None
+I0616 15:42:15.424748 20374333747200 pyconfig.py:559] Config param hf_eval_files: None
+I0616 15:42:15.424773 20374333747200 pyconfig.py:559] Config param hf_eval_split: None
+I0616 15:42:15.424798 20374333747200 pyconfig.py:559] Config param hf_lora_adapter_path: 
+I0616 15:42:15.424823 20374333747200 pyconfig.py:559] Config param hf_name: None
+I0616 15:42:15.424848 20374333747200 pyconfig.py:559] Config param hf_path: 
+I0616 15:42:15.424873 20374333747200 pyconfig.py:559] Config param hf_train_files: None
+I0616 15:42:15.424898 20374333747200 pyconfig.py:559] Config param hidden_size_for_vit: 1408
+I0616 15:42:15.424923 20374333747200 pyconfig.py:559] Config param hidden_size_per_layer_input: 0
+I0616 15:42:15.424948 20374333747200 pyconfig.py:559] Config param hide_profiler_step_metric: False
+I0616 15:42:15.424974 20374333747200 pyconfig.py:559] Config param ici_autoregressive_parallelism: 1
+I0616 15:42:15.424999 20374333747200 pyconfig.py:559] Config param ici_context_autoregressive_parallelism: 1
+I0616 15:42:15.425024 20374333747200 pyconfig.py:559] Config param ici_context_parallelism: 1
+I0616 15:42:15.425049 20374333747200 pyconfig.py:559] Config param ici_data_parallelism: 1
+I0616 15:42:15.425080 20374333747200 pyconfig.py:559] Config param ici_diloco_parallelism: 1
+I0616 15:42:15.425105 20374333747200 pyconfig.py:559] Config param ici_expert_parallelism: 1
+I0616 15:42:15.425179 20374333747200 pyconfig.py:559] Config param ici_fsdp_parallelism: -1
+I0616 15:42:15.425205 20374333747200 pyconfig.py:559] Config param ici_fsdp_transpose_parallelism: 1
+I0616 15:42:15.425230 20374333747200 pyconfig.py:559] Config param ici_parallelism: [1, 1, 1, -1, 1, 1, 1, 1, 1, 1, 1, 1]
+I0616 15:42:15.425257 20374333747200 pyconfig.py:559] Config param ici_pipeline_parallelism: 1
+I0616 15:42:15.425282 20374333747200 pyconfig.py:559] Config param ici_sequence_parallelism: 1
+I0616 15:42:15.425307 20374333747200 pyconfig.py:559] Config param ici_tensor_parallelism: 1
+I0616 15:42:15.425332 20374333747200 pyconfig.py:559] Config param ici_tensor_sequence_parallelism: 1
+I0616 15:42:15.425357 20374333747200 pyconfig.py:559] Config param ici_tensor_transpose_parallelism: 1
+I0616 15:42:15.425382 20374333747200 pyconfig.py:559] Config param image_path: 
+I0616 15:42:15.425407 20374333747200 pyconfig.py:559] Config param image_placeholder: <|image|>
+I0616 15:42:15.425432 20374333747200 pyconfig.py:559] Config param image_size_for_vit: 896
+I0616 15:42:15.425457 20374333747200 pyconfig.py:559] Config param indexer_head_dim: 128
+I0616 15:42:15.425482 20374333747200 pyconfig.py:559] Config param indexer_loss_scaling_factor: 0.0
+I0616 15:42:15.425508 20374333747200 pyconfig.py:559] Config param indexer_n_heads: 64
+I0616 15:42:15.425533 20374333747200 pyconfig.py:559] Config param indexer_sparse_training: False
+I0616 15:42:15.425558 20374333747200 pyconfig.py:559] Config param indexer_topk: 2048
+I0616 15:42:15.425583 20374333747200 pyconfig.py:559] Config param inference_benchmark_test: False
+I0616 15:42:15.425608 20374333747200 pyconfig.py:559] Config param inference_metadata_file: 
+I0616 15:42:15.425637 20374333747200 pyconfig.py:559] Config param inference_microbenchmark_log_file_path: 
+I0616 15:42:15.425663 20374333747200 pyconfig.py:559] Config param inference_microbenchmark_loop_iters: 10
+I0616 15:42:15.425688 20374333747200 pyconfig.py:559] Config param inference_microbenchmark_num_samples: [1, 2, 3, 4, 5]
+I0616 15:42:15.425716 20374333747200 pyconfig.py:559] Config param inference_microbenchmark_prefill_lengths: 64,128,256,512,1024
+I0616 15:42:15.425741 20374333747200 pyconfig.py:559] Config param inference_microbenchmark_stages: prefill,generate
+I0616 15:42:15.425765 20374333747200 pyconfig.py:559] Config param inference_server: MaxtextInterleavedServer
+I0616 15:42:15.425791 20374333747200 pyconfig.py:559] Config param inhomogeneous_layer_cycle_interval: 1
+I0616 15:42:15.425815 20374333747200 pyconfig.py:559] Config param init_weights_seed: 0
+I0616 15:42:15.425840 20374333747200 pyconfig.py:559] Config param input_data_sharding_logical_axes: ['activation_embed_and_logits_batch', 'activation_norm_length']
+I0616 15:42:15.425867 20374333747200 pyconfig.py:559] Config param interleave_moe_layer_step: 1
+I0616 15:42:15.425892 20374333747200 pyconfig.py:559] Config param intermediate_size_for_vit: 5632
+I0616 15:42:15.425917 20374333747200 pyconfig.py:559] Config param internal_compile: False
+I0616 15:42:15.425942 20374333747200 pyconfig.py:559] Config param internal_compile_num_devices: -1
+I0616 15:42:15.425967 20374333747200 pyconfig.py:559] Config param jax_cache_dir: ~/jax_cache
+I0616 15:42:15.425993 20374333747200 pyconfig.py:559] Config param jax_debug_log_modules: 
+I0616 15:42:15.426017 20374333747200 pyconfig.py:559] Config param jax_distributed_initialization_timeout: 300
+I0616 15:42:15.426043 20374333747200 pyconfig.py:559] Config param jax_profiler_port: 9999
+I0616 15:42:15.426068 20374333747200 pyconfig.py:559] Config param key_proj: RematLocation.REMAT
+I0616 15:42:15.426095 20374333747200 pyconfig.py:559] Config param kv_cache_buffer: 256
+I0616 15:42:15.426139 20374333747200 pyconfig.py:559] Config param kv_lora_rank: 512
+I0616 15:42:15.426166 20374333747200 pyconfig.py:559] Config param kv_quant_axis: KvQuantAxis.HEADS_AND_DKV
+I0616 15:42:15.426201 20374333747200 pyconfig.py:559] Config param kv_quant_dtype: int8
+I0616 15:42:15.426226 20374333747200 pyconfig.py:559] Config param kv_wa_proj: RematLocation.REMAT
+I0616 15:42:15.426253 20374333747200 pyconfig.py:559] Config param learn_to_init_mode: False
+I0616 15:42:15.426278 20374333747200 pyconfig.py:559] Config param learning_rate: 3e-05
+I0616 15:42:15.426308 20374333747200 pyconfig.py:559] Config param learning_rate_final_fraction: 0.1
+I0616 15:42:15.426334 20374333747200 pyconfig.py:559] Config param learning_rate_schedule_steps: 5
+I0616 15:42:15.426360 20374333747200 pyconfig.py:559] Config param load_balance_loss_weight: 0.0
+I0616 15:42:15.426386 20374333747200 pyconfig.py:559] Config param load_checkpoint_only_once: False
+I0616 15:42:15.426411 20374333747200 pyconfig.py:559] Config param load_from_prefill_dir: False
+I0616 15:42:15.426437 20374333747200 pyconfig.py:559] Config param load_full_state_path: 
+I0616 15:42:15.426462 20374333747200 pyconfig.py:559] Config param load_parameters_path: 
+I0616 15:42:15.426487 20374333747200 pyconfig.py:559] Config param local_checkpoint_directory: 
+I0616 15:42:15.426512 20374333747200 pyconfig.py:559] Config param local_checkpoint_period: 0
+I0616 15:42:15.426537 20374333747200 pyconfig.py:559] Config param local_rope_max_timescale: -1
+I0616 15:42:15.426562 20374333747200 pyconfig.py:559] Config param local_rope_proportion: 1.0
+I0616 15:42:15.426588 20374333747200 pyconfig.py:559] Config param log_config: True
+I0616 15:42:15.426613 20374333747200 pyconfig.py:559] Config param log_period: 100
+I0616 15:42:15.426638 20374333747200 pyconfig.py:559] Config param logical_axis_rules: (('activation_embed_and_logits_batch', ('data', 'stage', 'fsdp', 'fsdp_transpose', 'expert')), ('activation_embed_and_logits_batch_sequence', ('data', 'stage', 'fsdp', 'fsdp_transpose', 'context', 'expert')), ('activation_vocab', ('tensor', 'tensor_transpose', 'tensor_sequence')), ('activation_vocab', ('tensor', 'tensor_transpose')), ('activation_vocab', 'tensor_sequence'), ('vocab', ('tensor', 'tensor_transpose', 'tensor_sequence', 'autoregressive')), ('embed_vocab', ('fsdp', 'fsdp_transpose', 'context', 'expert')), ('activation_batch_attn', ('data', 'fsdp', 'fsdp_transpose', 'expert')), ('activation_heads', ('tensor', 'tensor_transpose', 'tensor_sequence', 'autoregressive')), ('activation_kv_heads', ('tensor', 'tensor_transpose', 'tensor_sequence')), ('activation_length_attn', ('context',)), ('activation_q_length', ('context',)), ('activation_kv_length', ()), ('activation_embed_attn', ('tensor', 'tensor_transpose')), ('activation_kv', ('tensor', 'tensor_transpose', 'tensor_sequence')), ('activation_kv_batch', ('data', 'fsdp', 'fsdp_transpose', 'expert')), ('activation_kv_head_dim', ('tensor', 'tensor_transpose', 'tensor_sequence')), ('heads', ('tensor', 'tensor_transpose', 'tensor_sequence', 'autoregressive')), ('q_heads', ('tensor', 'tensor_transpose', 'tensor_sequence', 'autoregressive')), ('kv_heads', ('tensor', 'tensor_transpose', 'tensor_sequence', 'autoregressive')), ('qkv', ()), ('kv', ()), ('kv_head_dim', ()), ('q_lora', ('fsdp', 'fsdp_transpose', 'context', 'tensor_transpose', 'expert')), ('q_lora', ('fsdp', 'context', 'tensor_transpose', 'expert')), ('q_lora', ('fsdp', 'fsdp_transpose', 'context', 'expert')), ('q_lora', ('fsdp', 'context', 'expert')), ('q_lora_up_proj', ()), ('kv_lora', ('fsdp', 'fsdp_transpose', 'context', 'tensor_transpose', 'expert')), ('kv_lora', ('fsdp', 'context', 'tensor_transpose', 'expert')), ('kv_lora', ('fsdp', 'fsdp_transpose', 'context', 'expert')), ('kv_lora', ('fsdp', 'context', 'expert')), ('kv_lora_up_proj', ()), ('activation_batch_moe', ('data', 'fsdp', 'fsdp_transpose', 'expert')), ('activation_length_moe', ('context',)), ('activation_norm_length_moe', ('tensor_sequence', 'context')), ('activation_embed_moe', ('tensor', 'tensor_transpose')), ('activation_mlp_moe', ('tensor', 'tensor_transpose', 'tensor_sequence')), ('activation_exp', ('expert',)), ('exp', 'expert'), ('mlp_moe', ('fsdp_transpose', 'tensor', 'tensor_sequence', 'autoregressive')), ('embed_moe', ('fsdp', 'fsdp_transpose', 'tensor_transpose', 'context')), ('embed_moe', ('fsdp', 'tensor_transpose', 'context')), ('embed_moe', ('fsdp', 'fsdp_transpose', 'context')), ('embed_moe', ('fsdp', 'context')), ('activation_mlp', ('tensor', 'tensor_transpose', 'tensor_sequence')), ('activation_batch', ('data', 'fsdp', 'fsdp_transpose', 'expert')), ('activation_length', ('context',)), ('activation_norm_length', ('tensor_sequence', 'context')), ('activation_embed', ('tensor', 'tensor_transpose')), ('activation_stage', 'stage'), ('mlp', ('fsdp_transpose', 'tensor', 'tensor_sequence', 'autoregressive')), ('gdn_head', ('fsdp_transpose', 'tensor', 'tensor_sequence', 'autoregressive')), ('embed', ('fsdp', 'fsdp_transpose', 'tensor_transpose', 'context', 'expert')), ('embed', ('fsdp', 'tensor_transpose', 'context', 'expert')), ('embed', ('fsdp', 'fsdp_transpose', 'context', 'expert')), ('embed', ('fsdp', 'context', 'expert')), ('norm', ('tensor', 'tensor_transpose')), ('layers', 'stage'), ('diloco', 'diloco'), ('engram_dim', ('tensor',)), ('dense_layers', ()), ('moe_layers', ()), ('mhc', ()), ('prefill_activation_length', ('context',)), ('prefill_activation_norm_length', ('tensor_sequence', 'context')), ('activation_prefill_kv_batch', ('data', 'fsdp', 'fsdp_transpose', 'expert')), ('decode_batch', ('data', 'fsdp', 'fsdp_transpose', 'expert')), ('decode_length', ()), ('cache_heads', ('autoregressive', 'tensor', 'tensor_transpose', 'tensor_sequence')), ('cache_heads', ('autoregressive', 'tensor', 'tensor_sequence')), ('paged_kv_heads', ('tensor',)), ('cache_batch_prefill', ()), ('cache_batch', ()), ('cache_heads_none', ()), ('cache_kv', ()), ('cache_sequence', ()), ('num_pages', ()), ('tokens_per_page', ()), ('paged_kv_head_dim_size', ()), ('mlp_no_fsdp', ('tensor', 'tensor_sequence', 'autoregressive')), ('embed_tensor_transpose', ('tensor_transpose',)), ('exp_with_fsdp', 'fsdp'))
+I0616 15:42:15.426772 20374333747200 pyconfig.py:559] Config param logits_dot_in_fp32: False
+I0616 15:42:15.426800 20374333747200 pyconfig.py:559] Config param logits_via_embedding: True
+I0616 15:42:15.426827 20374333747200 pyconfig.py:559] Config param lora: {'enable_lora': False, 'lora_rank': 0, 'lora_alpha': 0.0, 'lora_module_path': '', 'lora_restore_path': ''}
+I0616 15:42:15.426857 20374333747200 pyconfig.py:559] Config param lora_input_adapters_path: 
+I0616 15:42:15.426884 20374333747200 pyconfig.py:559] Config param loss_agg_mode: sequence-mean-token-mean
+I0616 15:42:15.426909 20374333747200 pyconfig.py:559] Config param loss_algo: grpo
+I0616 15:42:15.426935 20374333747200 pyconfig.py:559] Config param lr_schedule_type: LearningRateScheduleType.COSINE
+I0616 15:42:15.426964 20374333747200 pyconfig.py:559] Config param lti_layer_indices: None
+I0616 15:42:15.426990 20374333747200 pyconfig.py:559] Config param lti_use_general_linear_map: False
+I0616 15:42:15.427016 20374333747200 pyconfig.py:559] Config param managed_mldiagnostics: False
+I0616 15:42:15.427041 20374333747200 pyconfig.py:559] Config param managed_mldiagnostics_dir: /tmp/maxtext_logs/qwen3_smoke_test/managed-mldiagnostics
+I0616 15:42:15.427067 20374333747200 pyconfig.py:559] Config param managed_mldiagnostics_on_demand_profiling: True
+I0616 15:42:15.427093 20374333747200 pyconfig.py:559] Config param managed_mldiagnostics_region: 
+I0616 15:42:15.427137 20374333747200 pyconfig.py:559] Config param managed_mldiagnostics_run_group: 
+I0616 15:42:15.427165 20374333747200 pyconfig.py:559] Config param math_verify_num_procs: None
+I0616 15:42:15.427190 20374333747200 pyconfig.py:559] Config param math_verify_timeout: 300
+I0616 15:42:15.427216 20374333747200 pyconfig.py:559] Config param matmul_precision: MatmulPrecision.DEFAULT
+I0616 15:42:15.427244 20374333747200 pyconfig.py:559] Config param max_checkify: False
+I0616 15:42:15.427270 20374333747200 pyconfig.py:559] Config param max_concurrency: 256
+I0616 15:42:15.427295 20374333747200 pyconfig.py:559] Config param max_corpus_chars: 10000000
+I0616 15:42:15.427321 20374333747200 pyconfig.py:559] Config param max_num_batched_tokens: None
+I0616 15:42:15.427350 20374333747200 pyconfig.py:559] Config param max_num_checkpoints_to_keep: None
+I0616 15:42:15.427376 20374333747200 pyconfig.py:559] Config param max_num_images_per_example: -1
+I0616 15:42:15.427401 20374333747200 pyconfig.py:559] Config param max_num_seqs: None
+I0616 15:42:15.427426 20374333747200 pyconfig.py:559] Config param max_position_embeddings: 163840
+I0616 15:42:15.427451 20374333747200 pyconfig.py:559] Config param max_prefill_predict_length: 64
+I0616 15:42:15.427476 20374333747200 pyconfig.py:559] Config param max_sample_len_for_audio: 10000
+I0616 15:42:15.427501 20374333747200 pyconfig.py:559] Config param max_segments_per_seq: -1
+I0616 15:42:15.427526 20374333747200 pyconfig.py:559] Config param max_source_positions_for_audio: 1500
+I0616 15:42:15.427551 20374333747200 pyconfig.py:559] Config param max_target_length: 2048
+I0616 15:42:15.427580 20374333747200 pyconfig.py:559] Config param max_timescale_for_audio: 10000.0
+I0616 15:42:15.427606 20374333747200 pyconfig.py:559] Config param megablox: True
+I0616 15:42:15.427632 20374333747200 pyconfig.py:559] Config param merge_gating_gmm: False
+I0616 15:42:15.427657 20374333747200 pyconfig.py:559] Config param mesh_axes: ['diloco', 'data', 'stage', 'fsdp', 'fsdp_transpose', 'context', 'context_autoregressive', 'tensor', 'tensor_transpose', 'tensor_sequence', 'expert', 'autoregressive']
+I0616 15:42:15.427686 20374333747200 pyconfig.py:559] Config param metrics_dir: /tmp/maxtext_logs/qwen3_smoke_test/metrics/
+I0616 15:42:15.427712 20374333747200 pyconfig.py:559] Config param metrics_file: 
+I0616 15:42:15.427737 20374333747200 pyconfig.py:559] Config param mhc_expansion_rate: 1
+I0616 15:42:15.427762 20374333747200 pyconfig.py:559] Config param micro_batch_size_to_eval_on: 1
+I0616 15:42:15.427787 20374333747200 pyconfig.py:559] Config param micro_batch_size_to_train_on: 1
+I0616 15:42:15.427812 20374333747200 pyconfig.py:559] Config param mla_kv: RematLocation.REMAT
+I0616 15:42:15.427839 20374333747200 pyconfig.py:559] Config param mla_naive_kvcache: True
+I0616 15:42:15.427864 20374333747200 pyconfig.py:559] Config param mla_q: RematLocation.REMAT
+I0616 15:42:15.427890 20374333747200 pyconfig.py:559] Config param mlp_activations: ['silu', 'linear']
+I0616 15:42:15.427917 20374333747200 pyconfig.py:559] Config param mlp_activations_limit: -1.0
+I0616 15:42:15.427943 20374333747200 pyconfig.py:559] Config param mlp_bias: False
+I0616 15:42:15.427968 20374333747200 pyconfig.py:559] Config param mlp_dim: 3072
+I0616 15:42:15.427994 20374333747200 pyconfig.py:559] Config param mlpwi: RematLocation.REMAT
+I0616 15:42:15.428020 20374333747200 pyconfig.py:559] Config param mlpwi_0: RematLocation.REMAT
+I0616 15:42:15.428045 20374333747200 pyconfig.py:559] Config param mlpwi_1: RematLocation.REMAT
+I0616 15:42:15.428071 20374333747200 pyconfig.py:559] Config param mlpwo: RematLocation.REMAT
+I0616 15:42:15.428097 20374333747200 pyconfig.py:559] Config param moba: False
+I0616 15:42:15.428141 20374333747200 pyconfig.py:559] Config param moba_chunk_size: 1024
+I0616 15:42:15.428168 20374333747200 pyconfig.py:559] Config param moba_topk: 8
+I0616 15:42:15.428194 20374333747200 pyconfig.py:559] Config param model_call_mode: 
+I0616 15:42:15.428220 20374333747200 pyconfig.py:559] Config param model_name: qwen3-0.6b
+I0616 15:42:15.428246 20374333747200 pyconfig.py:559] Config param moe_expert_input_dim: -1
+I0616 15:42:15.428271 20374333747200 pyconfig.py:559] Config param moe_fsdp_use_two_stage_all_gather: False
+I0616 15:42:15.428296 20374333747200 pyconfig.py:559] Config param moe_mlp_dim: -1
+I0616 15:42:15.428322 20374333747200 pyconfig.py:559] Config param moe_mlpwi_0: RematLocation.REMAT
+I0616 15:42:15.428347 20374333747200 pyconfig.py:559] Config param moe_mlpwi_1: RematLocation.REMAT
+I0616 15:42:15.428373 20374333747200 pyconfig.py:559] Config param moe_mlpwo: RematLocation.REMAT
+I0616 15:42:15.428399 20374333747200 pyconfig.py:559] Config param monitor_goodput: False
+I0616 15:42:15.428424 20374333747200 pyconfig.py:559] Config param monitor_step_time_deviation: True
+I0616 15:42:15.428454 20374333747200 pyconfig.py:559] Config param mrope_section: [24, 20, 20]
+I0616 15:42:15.428481 20374333747200 pyconfig.py:559] Config param mscale: 1.0
+I0616 15:42:15.428507 20374333747200 pyconfig.py:559] Config param mtc_data_parallelism: 0
+I0616 15:42:15.428532 20374333747200 pyconfig.py:559] Config param mtp_eval_target_module: 0
+I0616 15:42:15.428557 20374333747200 pyconfig.py:559] Config param mtp_loss_scaling_factor: 0.1
+I0616 15:42:15.428583 20374333747200 pyconfig.py:559] Config param mtp_num_layers: 0
+I0616 15:42:15.428609 20374333747200 pyconfig.py:559] Config param mu_dtype: float32
+I0616 15:42:15.428662 20374333747200 pyconfig.py:559] Config param multi_sampling: False
+I0616 15:42:15.428689 20374333747200 pyconfig.py:559] Config param multi_tier_checkpointing_backup_interval_minutes: 0
+I0616 15:42:15.428715 20374333747200 pyconfig.py:559] Config param muon_beta: 0.95
+I0616 15:42:15.428742 20374333747200 pyconfig.py:559] Config param muon_consistent_rms: None
+I0616 15:42:15.428767 20374333747200 pyconfig.py:559] Config param muon_weight_decay: 0.0
+I0616 15:42:15.428794 20374333747200 pyconfig.py:559] Config param n_routing_groups: -1
+I0616 15:42:15.428819 20374333747200 pyconfig.py:559] Config param n_window_for_audio: 50
+I0616 15:42:15.428845 20374333747200 pyconfig.py:559] Config param n_window_infer_for_audio: 800
+I0616 15:42:15.428870 20374333747200 pyconfig.py:559] Config param nope_layer_interval: -1
+I0616 15:42:15.428895 20374333747200 pyconfig.py:559] Config param norm_topk_prob: False
+I0616 15:42:15.428920 20374333747200 pyconfig.py:559] Config param normalization_layer_epsilon: 1e-06
+I0616 15:42:15.428948 20374333747200 pyconfig.py:559] Config param normalize_embedding_logits: False
+I0616 15:42:15.428974 20374333747200 pyconfig.py:559] Config param num_attention_heads_for_vit: 16
+I0616 15:42:15.428999 20374333747200 pyconfig.py:559] Config param num_batches: 4
+I0616 15:42:15.429024 20374333747200 pyconfig.py:559] Config param num_channels_for_vit: 3
+I0616 15:42:15.429049 20374333747200 pyconfig.py:559] Config param num_conv_layers_for_audio: 3
+I0616 15:42:15.429074 20374333747200 pyconfig.py:559] Config param num_decoder_layers: 28
+I0616 15:42:15.429099 20374333747200 pyconfig.py:559] Config param num_diloco_replicas: 1
+I0616 15:42:15.429143 20374333747200 pyconfig.py:559] Config param num_epoch: 1
+I0616 15:42:15.429170 20374333747200 pyconfig.py:559] Config param num_eval_passes: 1
+I0616 15:42:15.429195 20374333747200 pyconfig.py:559] Config param num_experts: 1
+I0616 15:42:15.429220 20374333747200 pyconfig.py:559] Config param num_experts_per_tok: 1
+I0616 15:42:15.429246 20374333747200 pyconfig.py:559] Config param num_generations: 2
+I0616 15:42:15.429271 20374333747200 pyconfig.py:559] Config param num_hidden_layers_for_vit: 34
+I0616 15:42:15.429297 20374333747200 pyconfig.py:559] Config param num_iterations: 1
+I0616 15:42:15.429322 20374333747200 pyconfig.py:559] Config param num_kv_heads: 8
+I0616 15:42:15.429347 20374333747200 pyconfig.py:559] Config param num_kv_shared_layers: 0
+I0616 15:42:15.429371 20374333747200 pyconfig.py:559] Config param num_layers_per_pipeline_stage: 1
+I0616 15:42:15.429396 20374333747200 pyconfig.py:559] Config param num_mel_bins_for_audio: 128
+I0616 15:42:15.429421 20374333747200 pyconfig.py:559] Config param num_pipeline_microbatches: -1
+I0616 15:42:15.429446 20374333747200 pyconfig.py:559] Config param num_pipeline_repeats: -1
+I0616 15:42:15.429471 20374333747200 pyconfig.py:559] Config param num_position_embeddings_for_vit: 1024
+I0616 15:42:15.429496 20374333747200 pyconfig.py:559] Config param num_query_heads: 16
+I0616 15:42:15.429520 20374333747200 pyconfig.py:559] Config param num_samplers_slices: -1
+I0616 15:42:15.429545 20374333747200 pyconfig.py:559] Config param num_slices: 1
+I0616 15:42:15.429570 20374333747200 pyconfig.py:559] Config param num_target_devices: 1
+I0616 15:42:15.429595 20374333747200 pyconfig.py:559] Config param num_test_batches: 5
+I0616 15:42:15.429620 20374333747200 pyconfig.py:559] Config param num_trainer_slices: -1
+I0616 15:42:15.429649 20374333747200 pyconfig.py:559] Config param num_vocab_tiling: 1
+I0616 15:42:15.429674 20374333747200 pyconfig.py:559] Config param o_groups: 0
+I0616 15:42:15.429699 20374333747200 pyconfig.py:559] Config param o_lora_rank: 0
+I0616 15:42:15.429724 20374333747200 pyconfig.py:559] Config param off_policy_steps: 0
+I0616 15:42:15.429749 20374333747200 pyconfig.py:559] Config param offline_data_dir: None
+I0616 15:42:15.429774 20374333747200 pyconfig.py:559] Config param olmo_apply_ngram_filter: True
+I0616 15:42:15.429799 20374333747200 pyconfig.py:559] Config param olmo_index_path: 
+I0616 15:42:15.429824 20374333747200 pyconfig.py:559] Config param olmo_path_remap_from: 
+I0616 15:42:15.429850 20374333747200 pyconfig.py:559] Config param olmo_path_remap_to: 
+I0616 15:42:15.429878 20374333747200 pyconfig.py:559] Config param opt_type: OptimizerType.ADAMW
+I0616 15:42:15.429906 20374333747200 pyconfig.py:559] Config param optimize_mesh_for_tpu_v6e: False
+I0616 15:42:15.429932 20374333747200 pyconfig.py:559] Config param optimizer_memory_host_offload: False
+I0616 15:42:15.429959 20374333747200 pyconfig.py:559] Config param original_max_position_embeddings: 4096
+I0616 15:42:15.429984 20374333747200 pyconfig.py:559] Config param out_hidden_size_for_vit: 512
+I0616 15:42:15.430009 20374333747200 pyconfig.py:559] Config param out_proj: RematLocation.REMAT
+I0616 15:42:15.430035 20374333747200 pyconfig.py:559] Config param output_dim_for_audio: 512
+I0616 15:42:15.430060 20374333747200 pyconfig.py:559] Config param override_logical_axis_rules: False
+I0616 15:42:15.430085 20374333747200 pyconfig.py:559] Config param override_model_config: False
+I0616 15:42:15.430121 20374333747200 pyconfig.py:559] Config param packing: True
+I0616 15:42:15.430176 20374333747200 pyconfig.py:559] Config param padded_base_moe_mlp_dim: None
+I0616 15:42:15.430211 20374333747200 pyconfig.py:559] Config param param_scan_axis: 1
+I0616 15:42:15.430237 20374333747200 pyconfig.py:559] Config param parameter_memory_host_offload: False
+I0616 15:42:15.430263 20374333747200 pyconfig.py:559] Config param partial_rotary_factor: 1.0
+I0616 15:42:15.430289 20374333747200 pyconfig.py:559] Config param patch_size_for_vit: 14
+I0616 15:42:15.430314 20374333747200 pyconfig.py:559] Config param penalty_incorrect_answer: -1.0
+I0616 15:42:15.430340 20374333747200 pyconfig.py:559] Config param penalty_incorrect_format: -0.5
+I0616 15:42:15.430367 20374333747200 pyconfig.py:559] Config param per_device_batch_size: 1
+I0616 15:42:15.430392 20374333747200 pyconfig.py:559] Config param per_device_batch_size_increment: 2.0
+I0616 15:42:15.430418 20374333747200 pyconfig.py:559] Config param per_device_batch_size_start: 4.0
+I0616 15:42:15.430443 20374333747200 pyconfig.py:559] Config param pipeline_delay_activation_forwarding: False
+I0616 15:42:15.430468 20374333747200 pyconfig.py:559] Config param pipeline_fsdp_ag_once: False
+I0616 15:42:15.430494 20374333747200 pyconfig.py:559] Config param pipeline_fsdp_ag_per_repeat: False
+I0616 15:42:15.430519 20374333747200 pyconfig.py:559] Config param pipeline_parallel_layers: 28
+I0616 15:42:15.430544 20374333747200 pyconfig.py:559] Config param pixel_shuffle_ratio_for_vit: 0.5
+I0616 15:42:15.430570 20374333747200 pyconfig.py:559] Config param posemb_type_for_vit: learn
+I0616 15:42:15.430595 20374333747200 pyconfig.py:559] Config param position_id_per_seconds: 25
+I0616 15:42:15.430621 20374333747200 pyconfig.py:559] Config param prefill_cache_axis_order: 1,2,0,3
+I0616 15:42:15.430649 20374333747200 pyconfig.py:559] Config param prefill_cache_dir: 
+I0616 15:42:15.430675 20374333747200 pyconfig.py:559] Config param prefill_chunk_size: 256
+I0616 15:42:15.430701 20374333747200 pyconfig.py:559] Config param prefill_slice: v5e-16
+I0616 15:42:15.430727 20374333747200 pyconfig.py:559] Config param prefix_caching_dram_byte: 100000000000
+I0616 15:42:15.430754 20374333747200 pyconfig.py:559] Config param prefix_caching_hbm_byte: 10000000000
+I0616 15:42:15.430780 20374333747200 pyconfig.py:559] Config param prefuse_moe_weights: False
+I0616 15:42:15.430812 20374333747200 pyconfig.py:559] Config param profile_cleanly: True
+I0616 15:42:15.430839 20374333747200 pyconfig.py:559] Config param profile_periodically_period: -1
+I0616 15:42:15.430864 20374333747200 pyconfig.py:559] Config param profile_power_events: False
+I0616 15:42:15.430889 20374333747200 pyconfig.py:559] Config param profiler: ProfilerType.NONE
+I0616 15:42:15.430918 20374333747200 pyconfig.py:559] Config param profiler_steps: 5
+I0616 15:42:15.430944 20374333747200 pyconfig.py:559] Config param projector_dropout_for_vit: 0.0
+I0616 15:42:15.430970 20374333747200 pyconfig.py:559] Config param projector_input_dim_for_vit: 4096
+I0616 15:42:15.430995 20374333747200 pyconfig.py:559] Config param projector_output_dim_for_vit: 4096
+I0616 15:42:15.431020 20374333747200 pyconfig.py:559] Config param prometheus_port: 0
+I0616 15:42:15.431045 20374333747200 pyconfig.py:559] Config param prompt: I love to
+I0616 15:42:15.431070 20374333747200 pyconfig.py:559] Config param pure_nnx: False
+I0616 15:42:15.431095 20374333747200 pyconfig.py:559] Config param pure_nnx_decoder: False
+I0616 15:42:15.431140 20374333747200 pyconfig.py:559] Config param q_lora_rank: 0
+I0616 15:42:15.431168 20374333747200 pyconfig.py:559] Config param qk_clip_threshold: 100.0
+I0616 15:42:15.431194 20374333747200 pyconfig.py:559] Config param qk_nope_head_dim: 128
+I0616 15:42:15.431219 20374333747200 pyconfig.py:559] Config param qk_norm_with_scale: True
+I0616 15:42:15.431244 20374333747200 pyconfig.py:559] Config param qk_rope_head_dim: 64
+I0616 15:42:15.431269 20374333747200 pyconfig.py:559] Config param qkv_proj: RematLocation.REMAT
+I0616 15:42:15.431296 20374333747200 pyconfig.py:559] Config param quant_cfg_path: 
+I0616 15:42:15.431321 20374333747200 pyconfig.py:559] Config param quantization: QuantizationType.NONE
+I0616 15:42:15.431349 20374333747200 pyconfig.py:559] Config param quantization_local_shard_count: 1
+I0616 15:42:15.431375 20374333747200 pyconfig.py:559] Config param quantize_kvcache: False
+I0616 15:42:15.431400 20374333747200 pyconfig.py:559] Config param query_proj: RematLocation.REMAT
+I0616 15:42:15.431426 20374333747200 pyconfig.py:559] Config param query_wa_proj: RematLocation.REMAT
+I0616 15:42:15.431451 20374333747200 pyconfig.py:559] Config param ragged_block_size: 256
+I0616 15:42:15.431477 20374333747200 pyconfig.py:559] Config param ragged_buffer_factor: -1.0
+I0616 15:42:15.431502 20374333747200 pyconfig.py:559] Config param rampup_end_step: 0
+I0616 15:42:15.431527 20374333747200 pyconfig.py:559] Config param rampup_samples_per_increment_to_load: None
+I0616 15:42:15.431552 20374333747200 pyconfig.py:559] Config param reasoning_end_token: </reasoning>
+I0616 15:42:15.431577 20374333747200 pyconfig.py:559] Config param reasoning_start_token: <reasoning>
+I0616 15:42:15.431602 20374333747200 pyconfig.py:559] Config param record_internal_nn_metrics: 0
+I0616 15:42:15.431627 20374333747200 pyconfig.py:559] Config param remat_policy: full
+I0616 15:42:15.431655 20374333747200 pyconfig.py:559] Config param remat_policy_for_vit: minimal
+I0616 15:42:15.431680 20374333747200 pyconfig.py:559] Config param remove_size_one_mesh_axis_from_type: True
+I0616 15:42:15.431706 20374333747200 pyconfig.py:559] Config param replicate_quant_scale: False
+I0616 15:42:15.431730 20374333747200 pyconfig.py:559] Config param replicator_backup_interval_minutes: 0
+I0616 15:42:15.431755 20374333747200 pyconfig.py:559] Config param report_heartbeat_metric_for_gcp_monitoring: False
+I0616 15:42:15.431780 20374333747200 pyconfig.py:559] Config param report_performance_metric_for_gcp_monitoring: False
+I0616 15:42:15.431805 20374333747200 pyconfig.py:559] Config param reshape_q: False
+I0616 15:42:15.431831 20374333747200 pyconfig.py:559] Config param reshard_chunk_size: None
+I0616 15:42:15.431856 20374333747200 pyconfig.py:559] Config param return_log_prob: False
+I0616 15:42:15.431881 20374333747200 pyconfig.py:559] Config param reuse_example_batch: 0
+I0616 15:42:15.431906 20374333747200 pyconfig.py:559] Config param reward_exact_answer: 5.0
+I0616 15:42:15.431936 20374333747200 pyconfig.py:559] Config param reward_exact_format_match: 3.0
+I0616 15:42:15.431962 20374333747200 pyconfig.py:559] Config param reward_partial_format_match: 0.5
+I0616 15:42:15.431988 20374333747200 pyconfig.py:559] Config param reward_ratio_guess_to_answer_high: 0.5
+I0616 15:42:15.432014 20374333747200 pyconfig.py:559] Config param reward_ratio_guess_to_answer_low: 0.25
+I0616 15:42:15.432040 20374333747200 pyconfig.py:559] Config param reward_white_space_format_match: 1.5
+I0616 15:42:15.432067 20374333747200 pyconfig.py:559] Config param rl: {'num_generations': 2, 'num_iterations': 1, 'grpo_beta': 0.08, 'grpo_epsilon': 0.2, 'loss_algo': 'grpo', 'loss_agg_mode': 'sequence-mean-token-mean', 'use_agentic_rollout': False, 'max_concurrency': 256, 'off_policy_steps': 0, 'system_prompt': '', 'degenerate_group_masking': True, 'epsilon_high': None, 'reshard_chunk_size': None}
+I0616 15:42:15.432101 20374333747200 pyconfig.py:559] Config param rollout_data_parallelism: -1
+I0616 15:42:15.432145 20374333747200 pyconfig.py:559] Config param rollout_expert_parallelism: 1
+I0616 15:42:15.432171 20374333747200 pyconfig.py:559] Config param rollout_micro_batch_size: -1
+I0616 15:42:15.432196 20374333747200 pyconfig.py:559] Config param rollout_tensor_parallelism: -1
+I0616 15:42:15.432221 20374333747200 pyconfig.py:559] Config param rope_attention_scaling: False
+I0616 15:42:15.432246 20374333747200 pyconfig.py:559] Config param rope_factor: 40
+I0616 15:42:15.432272 20374333747200 pyconfig.py:559] Config param rope_interleave: True
+I0616 15:42:15.432301 20374333747200 pyconfig.py:559] Config param rope_linear_scaling_factor: 1.0
+I0616 15:42:15.432328 20374333747200 pyconfig.py:559] Config param rope_max_timescale: 1000000
+I0616 15:42:15.432354 20374333747200 pyconfig.py:559] Config param rope_min_timescale: 1
+I0616 15:42:15.432379 20374333747200 pyconfig.py:559] Config param rope_theta_for_vit: 10000
+I0616 15:42:15.432404 20374333747200 pyconfig.py:559] Config param rope_truncate: True
+I0616 15:42:15.432430 20374333747200 pyconfig.py:559] Config param rope_type: RopeType.DEFAULT
+I0616 15:42:15.432459 20374333747200 pyconfig.py:559] Config param rope_use_scale: True
+I0616 15:42:15.432485 20374333747200 pyconfig.py:559] Config param routed_bias: False
+I0616 15:42:15.432509 20374333747200 pyconfig.py:559] Config param routed_bias_update_rate: 0.0
+I0616 15:42:15.432534 20374333747200 pyconfig.py:559] Config param routed_scaling_factor: 1.0
+I0616 15:42:15.432560 20374333747200 pyconfig.py:559] Config param routed_score_func: 
+I0616 15:42:15.432585 20374333747200 pyconfig.py:559] Config param run_name: qwen3_smoke_test
+I0616 15:42:15.432610 20374333747200 pyconfig.py:559] Config param sa_block_kv: 512
+I0616 15:42:15.432635 20374333747200 pyconfig.py:559] Config param sa_block_kv_compute: 512
+I0616 15:42:15.432674 20374333747200 pyconfig.py:559] Config param sa_block_kv_dkv: 512
+I0616 15:42:15.432716 20374333747200 pyconfig.py:559] Config param sa_block_kv_dkv_compute: 512
+I0616 15:42:15.432754 20374333747200 pyconfig.py:559] Config param sa_block_kv_dq: 512
+I0616 15:42:15.432793 20374333747200 pyconfig.py:559] Config param sa_block_q: 512
+I0616 15:42:15.432837 20374333747200 pyconfig.py:559] Config param sa_block_q_dkv: 512
+I0616 15:42:15.432878 20374333747200 pyconfig.py:559] Config param sa_block_q_dq: 512
+I0616 15:42:15.432917 20374333747200 pyconfig.py:559] Config param sa_k_layout: HEAD_DIM_MINOR
+I0616 15:42:15.432945 20374333747200 pyconfig.py:559] Config param sa_q_layout: HEAD_DIM_MINOR
+I0616 15:42:15.432970 20374333747200 pyconfig.py:559] Config param sa_use_fused_bwd_kernel: False
+I0616 15:42:15.432996 20374333747200 pyconfig.py:559] Config param sa_v_layout: HEAD_DIM_MINOR
+I0616 15:42:15.433022 20374333747200 pyconfig.py:559] Config param sampler_devices_fraction: 0.5
+I0616 15:42:15.433048 20374333747200 pyconfig.py:559] Config param save_checkpoint_on_completion: True
+I0616 15:42:15.433074 20374333747200 pyconfig.py:559] Config param save_config_to_gcs: False
+I0616 15:42:15.433099 20374333747200 pyconfig.py:559] Config param save_quantized_params_path: 
+I0616 15:42:15.433154 20374333747200 pyconfig.py:559] Config param scale_embedding_for_audio: True
+I0616 15:42:15.433182 20374333747200 pyconfig.py:559] Config param scan_layers: True
+I0616 15:42:15.433207 20374333747200 pyconfig.py:559] Config param scan_layers_per_stage: False
+I0616 15:42:15.433232 20374333747200 pyconfig.py:559] Config param scan_pipeline_iterations: True
+I0616 15:42:15.433257 20374333747200 pyconfig.py:559] Config param scan_pipeline_repeats: False
+I0616 15:42:15.433282 20374333747200 pyconfig.py:559] Config param set_remat_policy_on_layers_per_stage: False
+I0616 15:42:15.433307 20374333747200 pyconfig.py:559] Config param set_remat_policy_on_pipeline_iterations: True
+I0616 15:42:15.433332 20374333747200 pyconfig.py:559] Config param sft_train_on_completion_only: False
+I0616 15:42:15.433357 20374333747200 pyconfig.py:559] Config param shard_exp_on_fsdp: False
+I0616 15:42:15.433381 20374333747200 pyconfig.py:559] Config param shard_mode: ShardMode.AUTO
+I0616 15:42:15.433410 20374333747200 pyconfig.py:559] Config param shard_optimizer_over_data: False
+I0616 15:42:15.433435 20374333747200 pyconfig.py:559] Config param sharding_strategy: None
+I0616 15:42:15.433460 20374333747200 pyconfig.py:559] Config param sharding_tolerance: 0.02
+I0616 15:42:15.433487 20374333747200 pyconfig.py:559] Config param shardy: True
+I0616 15:42:15.433512 20374333747200 pyconfig.py:559] Config param share_kv_projections: False
+I0616 15:42:15.433537 20374333747200 pyconfig.py:559] Config param shared_experts: 0
+I0616 15:42:15.433563 20374333747200 pyconfig.py:559] Config param sinkhorn_iterations: 20
+I0616 15:42:15.433588 20374333747200 pyconfig.py:559] Config param skip_first_n_steps_for_profiler: 1
+I0616 15:42:15.433613 20374333747200 pyconfig.py:559] Config param skip_jax_distributed_system: False
+I0616 15:42:15.433640 20374333747200 pyconfig.py:559] Config param skip_step_interval: 128
+I0616 15:42:15.433666 20374333747200 pyconfig.py:559] Config param skip_step_on_spikes: False
+I0616 15:42:15.433691 20374333747200 pyconfig.py:559] Config param skip_step_scaling_factor: 6.0
+I0616 15:42:15.433717 20374333747200 pyconfig.py:559] Config param sliding_window_size: 0
+I0616 15:42:15.433742 20374333747200 pyconfig.py:559] Config param solution_end_token: </answer>
+I0616 15:42:15.433767 20374333747200 pyconfig.py:559] Config param solution_start_token: <answer>
+I0616 15:42:15.433791 20374333747200 pyconfig.py:559] Config param source_checkpoint_layout: orbax
+I0616 15:42:15.433816 20374333747200 pyconfig.py:559] Config param sparse_matmul: True
+I0616 15:42:15.433841 20374333747200 pyconfig.py:559] Config param spatial_merge_size_for_vit: 2
+I0616 15:42:15.433866 20374333747200 pyconfig.py:559] Config param stack_prefill_result_cache: False
+I0616 15:42:15.433891 20374333747200 pyconfig.py:559] Config param step_deviation_interval_seconds: 30
+I0616 15:42:15.433916 20374333747200 pyconfig.py:559] Config param steps: 5
+I0616 15:42:15.433944 20374333747200 pyconfig.py:559] Config param stop_strings: None
+I0616 15:42:15.433970 20374333747200 pyconfig.py:559] Config param student_overrides: {}
+I0616 15:42:15.433996 20374333747200 pyconfig.py:559] Config param student_params_to_update: None
+I0616 15:42:15.434021 20374333747200 pyconfig.py:559] Config param subslice_shape: 
+I0616 15:42:15.434046 20374333747200 pyconfig.py:559] Config param swap_space_vllm_gb: 2
+I0616 15:42:15.434072 20374333747200 pyconfig.py:559] Config param system_prompt: 
+I0616 15:42:15.434097 20374333747200 pyconfig.py:559] Config param target_eval_loss: 0.0
+I0616 15:42:15.434141 20374333747200 pyconfig.py:559] Config param teacher_overrides: {}
+I0616 15:42:15.434169 20374333747200 pyconfig.py:559] Config param temperature_tuning: False
+I0616 15:42:15.434194 20374333747200 pyconfig.py:559] Config param temporal_patch_size_for_vit: 2
+I0616 15:42:15.434219 20374333747200 pyconfig.py:559] Config param tensorboard_dir: /tmp/maxtext_logs/qwen3_smoke_test/tensorboard/
+I0616 15:42:15.434244 20374333747200 pyconfig.py:559] Config param tensors_on_device: None
+I0616 15:42:15.434274 20374333747200 pyconfig.py:559] Config param tensors_to_offload: None
+I0616 15:42:15.434299 20374333747200 pyconfig.py:559] Config param test_batch_start_index: 0
+I0616 15:42:15.434324 20374333747200 pyconfig.py:559] Config param tile_size_for_vit: 336
+I0616 15:42:15.434349 20374333747200 pyconfig.py:559] Config param tokenize_eval_data: True
+I0616 15:42:15.434373 20374333747200 pyconfig.py:559] Config param tokenize_train_data: True
+I0616 15:42:15.434398 20374333747200 pyconfig.py:559] Config param tokenizer_path: Qwen/Qwen3-0.6B
+I0616 15:42:15.434423 20374333747200 pyconfig.py:559] Config param tokenizer_type: TokenizerType.HUGGINGFACE
+I0616 15:42:15.434451 20374333747200 pyconfig.py:559] Config param topk_routing_group: -1
+I0616 15:42:15.434476 20374333747200 pyconfig.py:559] Config param tpu_num_chips_to_profile_per_task: 1
+I0616 15:42:15.434501 20374333747200 pyconfig.py:559] Config param tpu_num_sparse_core_tiles_to_trace: 1
+I0616 15:42:15.434526 20374333747200 pyconfig.py:559] Config param tpu_num_sparse_cores_to_trace: 2
+I0616 15:42:15.434550 20374333747200 pyconfig.py:559] Config param train_data_columns: ['text']
+I0616 15:42:15.434577 20374333747200 pyconfig.py:559] Config param train_fraction: 1.0
+I0616 15:42:15.434602 20374333747200 pyconfig.py:559] Config param train_image_column: image
+I0616 15:42:15.434628 20374333747200 pyconfig.py:559] Config param train_micro_batch_size: -1
+I0616 15:42:15.434653 20374333747200 pyconfig.py:559] Config param train_split: train
+I0616 15:42:15.434678 20374333747200 pyconfig.py:559] Config param trainable_parameters_mask: []
+I0616 15:42:15.434705 20374333747200 pyconfig.py:559] Config param trainable_position_size: -1
+I0616 15:42:15.434730 20374333747200 pyconfig.py:559] Config param trainer_devices_fraction: 0.5
+I0616 15:42:15.434756 20374333747200 pyconfig.py:559] Config param upload_all_profiler_results: False
+I0616 15:42:15.434781 20374333747200 pyconfig.py:559] Config param use_agentic_rollout: False
+I0616 15:42:15.434807 20374333747200 pyconfig.py:559] Config param use_audio: False
+I0616 15:42:15.434832 20374333747200 pyconfig.py:559] Config param use_audio_in_video: False
+I0616 15:42:15.434856 20374333747200 pyconfig.py:559] Config param use_batch_split_schedule: False
+I0616 15:42:15.434881 20374333747200 pyconfig.py:559] Config param use_chat_template: False
+I0616 15:42:15.434906 20374333747200 pyconfig.py:559] Config param use_chunked_prefill: False
+I0616 15:42:15.434931 20374333747200 pyconfig.py:559] Config param use_custom_sort_vjp: True
+I0616 15:42:15.434955 20374333747200 pyconfig.py:559] Config param use_double_wide_mlp: False
+I0616 15:42:15.434980 20374333747200 pyconfig.py:559] Config param use_dpo: False
+I0616 15:42:15.435005 20374333747200 pyconfig.py:559] Config param use_gather_mosaic_kernel: False
+I0616 15:42:15.435029 20374333747200 pyconfig.py:559] Config param use_grpo: True
+I0616 15:42:15.435054 20374333747200 pyconfig.py:559] Config param use_indexer: False
+I0616 15:42:15.435079 20374333747200 pyconfig.py:559] Config param use_iota_embed: False
+I0616 15:42:15.435104 20374333747200 pyconfig.py:559] Config param use_jax_splash: False
+I0616 15:42:15.435147 20374333747200 pyconfig.py:559] Config param use_manual_quantization: False
+I0616 15:42:15.435173 20374333747200 pyconfig.py:559] Config param use_max_logit_estimate: -1
+I0616 15:42:15.435198 20374333747200 pyconfig.py:559] Config param use_mrope: False
+I0616 15:42:15.435222 20374333747200 pyconfig.py:559] Config param use_multimodal: False
+I0616 15:42:15.435246 20374333747200 pyconfig.py:559] Config param use_pathways: True
+I0616 15:42:15.435271 20374333747200 pyconfig.py:559] Config param use_post_attn_norm: False
+I0616 15:42:15.435296 20374333747200 pyconfig.py:559] Config param use_post_ffw_norm: False
+I0616 15:42:15.435320 20374333747200 pyconfig.py:559] Config param use_qk_clip: False
+I0616 15:42:15.435345 20374333747200 pyconfig.py:559] Config param use_qk_norm: True
+I0616 15:42:15.435370 20374333747200 pyconfig.py:559] Config param use_qk_norm_in_gdn: True
+I0616 15:42:15.435399 20374333747200 pyconfig.py:559] Config param use_qwix_quantization: False
+I0616 15:42:15.435424 20374333747200 pyconfig.py:559] Config param use_ragged_attention: False
+I0616 15:42:15.435449 20374333747200 pyconfig.py:559] Config param use_ragged_sort: False
+I0616 15:42:15.435474 20374333747200 pyconfig.py:559] Config param use_random_routing: False
+I0616 15:42:15.435499 20374333747200 pyconfig.py:559] Config param use_replicator_service: False
+I0616 15:42:15.435524 20374333747200 pyconfig.py:559] Config param use_ring_of_experts: False
+I0616 15:42:15.435549 20374333747200 pyconfig.py:559] Config param use_sft: False
+I0616 15:42:15.435573 20374333747200 pyconfig.py:559] Config param use_splash_scheduler: False
+I0616 15:42:15.435598 20374333747200 pyconfig.py:559] Config param use_standalone_converter: False
+I0616 15:42:15.435622 20374333747200 pyconfig.py:559] Config param use_tokamax_gmm: False
+I0616 15:42:15.435647 20374333747200 pyconfig.py:559] Config param use_tokamax_splash: False
+I0616 15:42:15.435671 20374333747200 pyconfig.py:559] Config param use_truncation: True
+I0616 15:42:15.435696 20374333747200 pyconfig.py:559] Config param use_tunix_gradient_accumulation: False
+I0616 15:42:15.435721 20374333747200 pyconfig.py:559] Config param use_untrainable_positional_embedding: False
+I0616 15:42:15.435745 20374333747200 pyconfig.py:559] Config param use_vertex_tensorboard: False
+I0616 15:42:15.435770 20374333747200 pyconfig.py:559] Config param using_pipeline_parallelism: False
+I0616 15:42:15.435794 20374333747200 pyconfig.py:559] Config param v_head_dim: 128
+I0616 15:42:15.435819 20374333747200 pyconfig.py:559] Config param v_norm_with_scale: True
+I0616 15:42:15.435843 20374333747200 pyconfig.py:559] Config param value_proj: RematLocation.REMAT
+I0616 15:42:15.435869 20374333747200 pyconfig.py:559] Config param vertex_tensorboard_project: 
+I0616 15:42:15.435894 20374333747200 pyconfig.py:559] Config param vertex_tensorboard_region: 
+I0616 15:42:15.435919 20374333747200 pyconfig.py:559] Config param video_path: 
+I0616 15:42:15.435943 20374333747200 pyconfig.py:559] Config param video_placeholder: <|video|>
+I0616 15:42:15.435969 20374333747200 pyconfig.py:559] Config param vision_output_dim_for_vit: 4096
+I0616 15:42:15.435993 20374333747200 pyconfig.py:559] Config param vision_output_length: -1
+I0616 15:42:15.436021 20374333747200 pyconfig.py:559] Config param vllm_additional_config: {}
+I0616 15:42:15.436046 20374333747200 pyconfig.py:559] Config param vllm_hf_config_path: 
+I0616 15:42:15.436071 20374333747200 pyconfig.py:559] Config param vllm_hf_overrides: {}
+I0616 15:42:15.436096 20374333747200 pyconfig.py:559] Config param vllm_load_format: dummy
+I0616 15:42:15.436138 20374333747200 pyconfig.py:559] Config param vocab_size: 151936
+I0616 15:42:15.436165 20374333747200 pyconfig.py:559] Config param vocab_size_per_layer_input: 0
+I0616 15:42:15.436190 20374333747200 pyconfig.py:559] Config param warmup_steps_fraction: 0.1
+I0616 15:42:15.436216 20374333747200 pyconfig.py:559] Config param weight_dtype: float32
+I0616 15:42:15.436266 20374333747200 pyconfig.py:559] Config param weight_quantization_calibration_method: absmax
+I0616 15:42:15.436294 20374333747200 pyconfig.py:559] Config param weight_sparsity_m: None
+I0616 15:42:15.436320 20374333747200 pyconfig.py:559] Config param weight_sparsity_n: None
+I0616 15:42:15.436345 20374333747200 pyconfig.py:559] Config param weight_sparsity_start_step: 50
+I0616 15:42:15.436371 20374333747200 pyconfig.py:559] Config param weight_sparsity_update_step: 10
+I0616 15:42:15.436396 20374333747200 pyconfig.py:559] Config param wi_tile_dlhs_batch_seq: 512
+I0616 15:42:15.436422 20374333747200 pyconfig.py:559] Config param wi_tile_dlhs_embed_dim: 1024
+I0616 15:42:15.436446 20374333747200 pyconfig.py:559] Config param wi_tile_dlhs_mlp_dim: 1024
+I0616 15:42:15.436472 20374333747200 pyconfig.py:559] Config param wi_tile_drhs_batch_seq: 512
+I0616 15:42:15.436511 20374333747200 pyconfig.py:559] Config param wi_tile_drhs_embed_dim: 1024
+I0616 15:42:15.436542 20374333747200 pyconfig.py:559] Config param wi_tile_drhs_mlp_dim: 1024
+I0616 15:42:15.436568 20374333747200 pyconfig.py:559] Config param wi_tile_fwd_batch_seq: 512
+I0616 15:42:15.436593 20374333747200 pyconfig.py:559] Config param wi_tile_fwd_embed_dim: 1024
+I0616 15:42:15.436618 20374333747200 pyconfig.py:559] Config param wi_tile_fwd_mlp_dim: 1024
+I0616 15:42:15.436643 20374333747200 pyconfig.py:559] Config param wo_tile_dlhs_batch_seq: 512
+I0616 15:42:15.436668 20374333747200 pyconfig.py:559] Config param wo_tile_dlhs_embed_dim: 1024
+I0616 15:42:15.436693 20374333747200 pyconfig.py:559] Config param wo_tile_dlhs_mlp_dim: 1024
+I0616 15:42:15.436719 20374333747200 pyconfig.py:559] Config param wo_tile_drhs_batch_seq: 512
+I0616 15:42:15.436744 20374333747200 pyconfig.py:559] Config param wo_tile_drhs_embed_dim: 1024
+I0616 15:42:15.436769 20374333747200 pyconfig.py:559] Config param wo_tile_drhs_mlp_dim: 1024
+I0616 15:42:15.436793 20374333747200 pyconfig.py:559] Config param wo_tile_fwd_batch_seq: 512
+I0616 15:42:15.436819 20374333747200 pyconfig.py:559] Config param wo_tile_fwd_embed_dim: 1024
+I0616 15:42:15.436844 20374333747200 pyconfig.py:559] Config param wo_tile_fwd_mlp_dim: 1024
+I0616 15:42:15.436870 20374333747200 pyconfig.py:559] Config param wsd_decay_steps_fraction: 0.1
+I0616 15:42:15.436896 20374333747200 pyconfig.py:559] Config param wsd_decay_style: WsdDecayStyle.LINEAR
+I0616 15:42:15.436926 20374333747200 pyconfig.py:559] Config param xprof_e2e_enable_fw_power_level_event: False
+I0616 15:42:15.436951 20374333747200 pyconfig.py:559] Config param xprof_e2e_enable_fw_thermal_event: False
+I0616 15:42:15.436976 20374333747200 pyconfig.py:559] Config param xprof_e2e_enable_fw_throttle_event: False
+I0616 15:42:15.437001 20374333747200 pyconfig.py:559] Config param xprof_tpu_power_trace_level: 0
+I0616 15:42:15.437029 20374333747200 pyconfig.py:559] Config param z_loss_multiplier: 0.0
+I0616 15:42:15.437635 20374333747200 max_utils.py:815] System Information: Jax Version: 0.10.0
+I0616 15:42:15.437716 20374333747200 max_utils.py:816] System Information: Jaxlib Version: 0.10.0
+I0616 15:42:15.437779 20374333747200 max_utils.py:817] System Information: Jax Backend: cpu
+I0616 15:42:15.437827 20374333747200 train_utils.py:355] WARNING: 'base_output_directory' might be pointing your local file system
+I0616 15:42:15.437865 20374333747200 train_utils.py:366] WARNING: Sequence packing is essentially ignored for synthetic data. Please use a real dataset to use sequence packing.
+I0616 15:42:15.544783 20374333747200 maxtext_utils.py:1971] Num_devices: 1, shape (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+I0616 15:42:15.545073 20374333747200 maxtext_utils.py:1971] Num_devices: 1, shape (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+I0616 15:42:15.545395 20374333747200 checkpointing.py:963] Setting up checkpoint logger...
+I0616 15:42:15.545476 20374333747200 checkpointing.py:386] Checkpointing disabled, not creating checkpoint manager.
+I0616 15:42:16.434648 20374333747200 checkpointing.py:951] No existing checkpoints found, not restoring checkpoint.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/jax/_src/interpreters/mlir.py", line 2590, in _lower_jaxpr_to_fun_cached
+    func_op = ctx.cached_primitive_lowerings[key]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+KeyError: ('closed_call', { lambda ; a:bf16[1,2048,1,128] b:bf16[1,2048,1,128] c:bf16[1,2048,1,128] d:bf16[1,2048,1,128]
+    e:i32[1,2048] f:bf16[1,2048,1024] g:f32[1024,3072] h:f32[1024,3072] i:f32[3072,1024]
+    j:f32[1024] k:f32[1024] l:f32[1024,8,128] m:f32[128] n:f32[16,128,1024] o:f32[1024,16,128]
+    p:f32[128] q:f32[1024,8,128]. let
+    r:bf16[1,2048,1024] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None), spec=P(('data', 'fsdp', 'fsdp_transpose', 'expert'), ('tensor_sequence', 'context'), ('tensor', 'tensor_transpose')))
+      unconstrained_dims=frozenset()
+    ] f
+    s:bf16[1,2048,1024] = name[name=decoder_layer_input] r
+    t:f32[1,2048,1024] = convert_element_type[new_dtype=float32 weak_type=False] s
+    u:f32[1,2048,1024] = square t
+    v:f32[1,2048] = reduce_sum[axes=(2,) out_sharding=None] u
+    w:f32[1,2048,1] = broadcast_in_dim[broadcast_dimensions=(0, 1)] v
+    x:f32[1,2048,1] = div w 1024.0:f32[]
+    y:f32[1,2048,1] = add x 9.999999974752427e-07:f32[]
+    z:f32[1,2048,1] = rsqrt y
+    ba:f32[1,2048,1024] = mul t z
+    bb:bf16[1,2048,1024] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] ba
+    bc:bf16[1024] = convert_element_type[new_dtype=bfloat16 weak_type=False] k
+    bd:bf16[1024] = add bc 0.0:bf16[]
+    be:bf16[1024,1,2048] = dot_general[
+      dimension_numbers=(([], []), ([0], [2]))
+      preferred_element_type=bfloat16
+    ] bd bb
+    bf:bf16[1,2048,1024] = transpose[permutation=(1, 2, 0)] be
+    bg:bf16[1,2048,1024] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None), spec=P(('data', 'fsdp', 'fsdp_transpose', 'expert'), ('tensor_sequence', 'context'), ('tensor', 'tensor_transpose')))
+      unconstrained_dims=frozenset()
+    ] bf
+    bh:bf16[1,2048,1024] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto)), spec=P(None, None, None), memory_kind=device)
+      unconstrained_dims=frozenset()
+    ] bg
+    bi:bf16[1,2048,1024] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto)), spec=P(None, None, None), memory_kind=device)
+      unconstrained_dims=frozenset()
+    ] bg
+    bj:bf16[1024,16,128] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] o
+    bk:bf16[1,2048,16,128] = dot_general[
+      dimension_numbers=(([2], [0]), ([], []))
+      precision=(Precision.DEFAULT, Precision.DEFAULT)
+    ] bh bj
+    bl:bf16[1024,8,128] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] l
+    bm:bf16[1,2048,8,128] = dot_general[
+      dimension_numbers=(([2], [0]), ([], []))
+      precision=(Precision.DEFAULT, Precision.DEFAULT)
+    ] bi bl
+    bn:bf16[1024,8,128] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] q
+    bo:bf16[1,2048,8,128] = dot_general[
+      dimension_numbers=(([2], [0]), ([], []))
+      precision=(Precision.DEFAULT, Precision.DEFAULT)
+    ] bi bn
+    bp:f32[1,2048,16,128] = convert_element_type[
+      new_dtype=float32
+      weak_type=False
+    ] bk
+    bq:f32[1,2048,16,128] = square bp
+    br:f32[1,2048,16] = reduce_sum[axes=(3,) out_sharding=None] bq
+    bs:f32[1,2048,16,1] = broadcast_in_dim[broadcast_dimensions=(0, 1, 2)] br
+    bt:f32[1,2048,16,1] = div bs 128.0:f32[]
+    bu:f32[1,2048,16,1] = add bt 9.999999974752427e-07:f32[]
+    bv:f32[1,2048,16,1] = rsqrt bu
+    bw:f32[1,2048,16,128] = mul bp bv
+    bx:bf16[1,2048,16,128] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] bw
+    by:bf16[128] = convert_element_type[new_dtype=bfloat16 weak_type=False] p
+    bz:bf16[128] = add by 0.0:bf16[]
+    ca:bf16[128,1,2048,16] = dot_general[
+      dimension_numbers=(([], []), ([0], [3]))
+      preferred_element_type=bfloat16
+    ] bz bx
+    cb:bf16[1,2048,16,128] = transpose[permutation=(1, 2, 3, 0)] ca
+    cc:f32[1,2048,8,128] = convert_element_type[
+      new_dtype=float32
+      weak_type=False
+    ] bm
+    cd:f32[1,2048,8,128] = square cc
+    ce:f32[1,2048,8] = reduce_sum[axes=(3,) out_sharding=None] cd
+    cf:f32[1,2048,8,1] = broadcast_in_dim[broadcast_dimensions=(0, 1, 2)] ce
+    cg:f32[1,2048,8,1] = div cf 128.0:f32[]
+    ch:f32[1,2048,8,1] = add cg 9.999999974752427e-07:f32[]
+    ci:f32[1,2048,8,1] = rsqrt ch
+    cj:f32[1,2048,8,128] = mul cc ci
+    ck:bf16[1,2048,8,128] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] cj
+    cl:bf16[128] = convert_element_type[new_dtype=bfloat16 weak_type=False] m
+    cm:bf16[128] = add cl 0.0:bf16[]
+    cn:bf16[128,1,2048,8] = dot_general[
+      dimension_numbers=(([], []), ([0], [3]))
+      preferred_element_type=bfloat16
+    ] cm ck
+    co:bf16[1,2048,8,128] = transpose[permutation=(1, 2, 3, 0)] cn
+    cp:bf16[1,2048,16,128] = mul cb a
+    cq:bf16[1,2048,16,64] cr:bf16[1,2048,16,64] = split[
+      axis=3
+      sizes=(np.int64(64), np.int64(64))
+    ] cb
+    cs:bf16[1,2048,16,64] = neg cr
+    ct:bf16[1,2048,16,128] = concatenate[dimension=3] cs cq
+    cu:bf16[1,2048,16,128] = mul ct b
+    cv:bf16[1,2048,16,128] = add cp cu
+    cw:bf16[1,2048,8,128] = mul co c
+    cx:bf16[1,2048,8,64] cy:bf16[1,2048,8,64] = split[
+      axis=3
+      sizes=(np.int64(64), np.int64(64))
+    ] co
+    cz:bf16[1,2048,8,64] = neg cy
+    da:bf16[1,2048,8,128] = concatenate[dimension=3] cz cx
+    db:bf16[1,2048,8,128] = mul da d
+    dc:bf16[1,2048,8,128] = add cw db
+    dd:bf16[1,2048,16,128] = mul cv 0.08837890625:bf16[]
+    de:bf16[1,2048,16,128] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto)), spec=P(None, None, None, None), memory_kind=device)
+      unconstrained_dims=frozenset()
+    ] dd
+    df:bf16[1,2048,8,128] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto)), spec=P(None, None, None, None), memory_kind=device)
+      unconstrained_dims=frozenset()
+    ] dc
+    dg:bf16[1,2048,8,128] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto)), spec=P(None, None, None, None), memory_kind=device)
+      unconstrained_dims=frozenset()
+    ] bo
+    dh:bf16[1,2048,16,128] = name[name=query_proj] de
+    di:bf16[1,2048,8,128] = name[name=key_proj] df
+    dj:bf16[1,2048,8,128] = name[name=value_proj] dg
+    dk:bf16[1,2048,8,2,128] = broadcast_in_dim[
+      broadcast_dimensions=(0, 1, 2, 4)
+    ] di
+    dl:bf16[1,2048,16,128] = reshape[
+      dimensions=None
+      new_sizes=(1, 2048, 16, 128)
+      sharding=None
+    ] dk
+    dm:bf16[1,2048,8,2,128] = broadcast_in_dim[
+      broadcast_dimensions=(0, 1, 2, 4)
+    ] dj
+    dn:bf16[1,2048,16,128] = reshape[
+      dimensions=None
+      new_sizes=(1, 2048, 16, 128)
+      sharding=None
+    ] dm
+    do:bf16[1,2048,16,128] = custom_vjp_call[
+      name=mha
+      bwd=_mha_backward
+      call_jaxpr={ lambda ; dp:bf16[1,2048,16,128] dq:bf16[1,2048,16,128] dr:bf16[1,2048,16,128]
+          ds:i32[1,2048]. let
+          dt:bf16[1,2048,16,128] = jit[
+            name=mha
+            ctx_mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto))
+            jaxpr={ lambda ; dp:bf16[1,2048,16,128] dq:bf16[1,2048,16,128] dr:bf16[1,2048,16,128]
+                ds:i32[1,2048]. let
+                dt:bf16[1,2048,16,128] _:f32[1,16,2048] = pallas_call[
+                  compiler_params=CompilerParams(num_warps=8, num_stages=2)
+                  cost_estimate=None
+                  debug=False
+                  grid_mapping=GridMapping(grid=(16, 1, 16), block_mappings=(BlockMapping(block_shape=(Squeezed(), Blocked(block_size=128), Squeezed(), Blocked(block_size=128))), BlockMapping(block_shape=(Squeezed(), Blocked(block_size=2048), Squeezed(), Blocked(block_size=128))), BlockMapping(block_shape=(Squeezed(), Blocked(block_size=2048), Squeezed(), Blocked(block_size=128))), BlockMapping(block_shape=(Squeezed(), Blocked(block_size=2048))), BlockMapping(block_shape=(Squeezed(), Blocked(block_size=128), Squeezed(), Blocked(block_size=128))), BlockMapping(block_shape=(Squeezed(), Squeezed(), Blocked(block_size=128)))))
+                  input_output_aliases=()
+                  interpret=False
+                  jaxpr={ lambda ; du:Ref{bf16[128,128]} dv:Ref{bf16[2048,128]} dw:Ref{bf16[2048,128]}
+                      dx:Ref{i32[2048]} dy:Ref{bf16[128,128]} dz:Ref{f32[128]}. let
+                      ea:i32[] = program_id[axis=0] 
+                      eb:f32[128] = broadcast_in_dim 0.0:f32[]
+                      ec:f32[128] = sub eb inf:f32[]
+                      ed:f32[128] = broadcast_in_dim 0.0:f32[]
+                      ee:f32[128,128] = broadcast_in_dim 0.0:f32[]
+                      ef:i32[] = mul ea 128:i32[]
+                      eg:i32[128] = iota[
+                        dimension=0
+                        dtype=int32
+                        shape=(128,)
+                        sharding=None
+                      ] 
+                      eh:bool[128] = lt eg 128:i32[]
+                      ei:bool[1,128] = broadcast_in_dim[
+                        broadcast_dimensions=(1,)
+                      ] eh
+                      ej:bf16[128,128] <- du[...] mask=ei other=0.0:f32[]
+                      ek:i32[128] <- dx[ef:ef+128]
+                      el:i32[] = add ea 1:i32[]
+                      em:i32[] = mul 128:i32[] el
+                      en:i32[] = add em 128:i32[]
+                      eo:i32[] = sub en 1:i32[]
+                      ep:i32[] = div eo 128:i32[]
+                      _:i32[] _:i32[] eq:f32[128,128] er:f32[128] es:f32[128] = while[
+                        body_jaxpr={ lambda ; et:Ref{bf16[2048,128]} eu:bool[1,128]
+                            ev:bf16[128,128] ew:Ref{i32[2048]} ex:i32[128] ey:i32[]
+                            ez:Ref{bf16[2048,128]} fa:i32[] fb:i32[] fc:f32[128,128]
+                            fd:f32[128] fe:f32[128]. let
+                            ff:i32[] = add fa 1:i32[]
+                            fg:i32[] = mul fa 128:i32[]
+                            fh:bf16[128,128] <- et[fg:fg+128,:] mask=eu other=0.0:f32[]
+                            fi:bf16[128,128] = transpose[permutation=(1, 0)] fh
+                            fj:f32[128,128] = dot_general[
+                              dimension_numbers=(([1], [0]), ([], []))
+                              preferred_element_type=float32
+                            ] ev fi
+                            fk:f32[128,128] = mul fj 1.4426950216293335:f32[]
+                            fl:i32[128] <- ew[fg:fg+128]
+                            fm:i32[128,1] = broadcast_in_dim[
+                              broadcast_dimensions=(0,)
+                            ] ex
+                            fn:i32[1,128] = broadcast_in_dim[
+                              broadcast_dimensions=(1,)
+                            ] fl
+                            fo:bool[128,128] = eq fm fn
+                            fp:i32[] = mul ey 128:i32[]
+                            fq:i32[128] = iota[
+                              dimension=0
+                              dtype=int32
+                              shape=(128,)
+                              sharding=None
+                            ] 
+                            fr:i32[128] = add fp fq
+                            fs:i32[] = mul fa 128:i32[]
+                            ft:i32[128] = iota[
+                              dimension=0
+                              dtype=int32
+                              shape=(128,)
+                              sharding=None
+                            ] 
+                            fu:i32[] = convert_element_type[
+                              new_dtype=int32
+                              weak_type=False
+                            ] fs
+                            fv:i32[128] = add fu ft
+                            fw:i32[128,1] = broadcast_in_dim[
+                              broadcast_dimensions=(0,)
+                            ] fr
+                            fx:i32[1,128] = broadcast_in_dim[
+                              broadcast_dimensions=(1,)
+                            ] fv
+                            fy:bool[128,128] = ge fw fx
+                            fz:bool[128,128] = and fo fy
+                            ga:f32[128,128] = jit[
+                              name=_where
+                              ctx_mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto))
+                              jaxpr={ lambda ; fz:bool[128,128] fk:f32[128,128] gb:f32[]. let
+                                  gc:f32[] = convert_element_type[
+                                    new_dtype=float32
+                                    weak_type=False
+                                  ] gb
+                                  gd:f32[128,128] = broadcast_in_dim gc
+                                  ga:f32[128,128] = select_n fz gd fk
+                                in (ga,) }
+                            ] fz fk -2.381976426469702e+38:f32[]
+                            ge:f32[128] = reduce_max[axes=(1,)] ga
+                            gf:f32[128] = max fd ge
+                            gg:f32[128] = sub fd gf
+                            gh:f32[128] = exp2 gg
+                            gi:f32[128] = mul gh fe
+                            gj:f32[128,1] = broadcast_in_dim[
+                              broadcast_dimensions=(0,)
+                            ] gf
+                            gk:f32[128,128] = sub ga gj
+                            gl:f32[128,128] = exp2 gk
+                            gm:f32[128] = reduce_sum[
+                              axes=(1,)
+                              out_sharding=None
+                            ] gl
+                            gn:f32[128] = add gi gm
+                            go:f32[128,1] = broadcast_in_dim[
+                              broadcast_dimensions=(0,)
+                            ] gh
+                            gp:f32[128,128] = mul go fc
+                            gq:bf16[128,128] <- ez[fg:fg+128,:] mask=eu
+                            gr:bf16[128,128] = convert_element_type[
+                              new_dtype=bfloat16
+                              weak_type=False
+                            ] gl
+                            gs:f32[128,128] = dot_general[
+                              dimension_numbers=(([1], [0]), ([], []))
+                              preferred_element_type=float32
+                            ] gr gq
+                            gt:f32[128,128] = add gp gs
+                          in (ff, fb, gt, gf, gn) }
+                        body_nconsts=7
+                        cond_jaxpr={ lambda ; gu:i32[] gv:i32[] gw:f32[128,128] gx:f32[128]
+                            gy:f32[128]. let
+                            gz:bool[] = lt gu gv
+                          in (gz,) }
+                        cond_nconsts=0
+                      ] dv ei ej dx ek ea dw 0:i32[] ep ee ec ed
+                      ha:f32[128,1] = broadcast_in_dim[
+                        broadcast_dimensions=(0,)
+                      ] es
+                      hb:f32[128,128] = div eq ha
+                      hc:f32[128] = log es
+                      hd:f32[] = log 2.0:f32[]
+                      he:f32[128] = div hc hd
+                      hf:f32[128] = add er he
+                      dz[...] <- hf
+                      hg:bf16[128,128] = convert_element_type[
+                        new_dtype=bfloat16
+                        weak_type=False
+                      ] hb
+                      dy[:,:] <- hg
+                    in () }
+                  mesh=None
+                  metadata=None
+                  name=mha_forward
+                  out_avals=(ShapedArray(bfloat16[1,2048,16,128]), ShapedArray(float32[1,16,2048]))
+                ] dp dq dr ds
+              in (dt,) }
+          ] dp dq dr ds
+        in (dt,) }
+      fwd=_mha_forward
+      symbolic_zeros=False
+    ] dh dl dn e
+    hh:bf16[1,2048,16,128] = name[name=attention_out] do
+    hi:bf16[1,2048,16,128] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto)), spec=P(None, None, None, None), memory_kind=device)
+      unconstrained_dims=frozenset()
+    ] hh
+    hj:bf16[16,128,1024] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] n
+    hk:bf16[1,2048,1024] = dot_general[
+      dimension_numbers=(([2, 3], [0, 1]), ([], []))
+      precision=(Precision.DEFAULT, Precision.DEFAULT)
+    ] hi hj
+    hl:bf16[1,2048,1024] = name[name=out_proj] hk
+    hm:bf16[1,2048,1024] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None), spec=P(('data', 'fsdp', 'fsdp_transpose', 'expert'), ('tensor_sequence', 'context'), ('tensor', 'tensor_transpose')))
+      unconstrained_dims=frozenset()
+    ] hl
+    hn:bf16[1,2048,1024] = add s hm
+    ho:f32[1,2048,1024] = convert_element_type[
+      new_dtype=float32
+      weak_type=False
+    ] hn
+    hp:f32[1,2048,1024] = square ho
+    hq:f32[1,2048] = reduce_sum[axes=(2,) out_sharding=None] hp
+    hr:f32[1,2048,1] = broadcast_in_dim[broadcast_dimensions=(0, 1)] hq
+    hs:f32[1,2048,1] = div hr 1024.0:f32[]
+    ht:f32[1,2048,1] = add hs 9.999999974752427e-07:f32[]
+    hu:f32[1,2048,1] = rsqrt ht
+    hv:f32[1,2048,1024] = mul ho hu
+    hw:bf16[1,2048,1024] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] hv
+    hx:bf16[1024] = convert_element_type[new_dtype=bfloat16 weak_type=False] j
+    hy:bf16[1024] = add hx 0.0:bf16[]
+    hz:bf16[1024,1,2048] = dot_general[
+      dimension_numbers=(([], []), ([0], [2]))
+      preferred_element_type=bfloat16
+    ] hy hw
+    ia:bf16[1,2048,1024] = transpose[permutation=(1, 2, 0)] hz
+    ib:bf16[1,2048,1024] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None), spec=P(('data', 'fsdp', 'fsdp_transpose', 'expert'), ('tensor_sequence', 'context'), ('tensor', 'tensor_transpose')))
+      unconstrained_dims=frozenset()
+    ] ia
+    ic:bf16[1024,3072] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] g
+    id:bf16[1,2048,3072] = dot_general[
+      dimension_numbers=(([2], [0]), ([], []))
+      precision=(Precision.DEFAULT, Precision.DEFAULT)
+    ] ib ic
+    ie:bf16[1,2048,3072] = name[name=mlpwi_0] id
+    if:bf16[1,2048,3072] = jit[
+      name=silu
+      ctx_mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto))
+      jaxpr={ lambda ; ie:bf16[1,2048,3072]. let
+          ig:bf16[1,2048,3072] = logistic ie
+          if:bf16[1,2048,3072] = mul ie ig
+        in (if,) }
+    ] ie
+    ih:bf16[1024,3072] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] h
+    ii:bf16[1,2048,3072] = dot_general[
+      dimension_numbers=(([2], [0]), ([], []))
+      precision=(Precision.DEFAULT, Precision.DEFAULT)
+    ] ib ih
+    ij:bf16[1,2048,3072] = name[name=mlpwi_1] ii
+    ik:bf16[1,2048,3072] = mul if ij
+    il:bf16[1,2048,3072] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=Mesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto)), spec=P(None, None, None), memory_kind=device)
+      unconstrained_dims=frozenset()
+    ] ik
+    im:bf16[3072,1024] = convert_element_type[
+      new_dtype=bfloat16
+      weak_type=False
+    ] i
+    in:bf16[1,2048,1024] = dot_general[
+      dimension_numbers=(([2], [0]), ([], []))
+      precision=(Precision.DEFAULT, Precision.DEFAULT)
+    ] il im
+    io:bf16[1,2048,1024] = name[name=mlpwo] in
+    ip:bf16[1,2048,1024] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None), spec=P(('data', 'fsdp', 'fsdp_transpose', 'expert'), ('tensor_sequence', 'context'), ('tensor', 'tensor_transpose')))
+      unconstrained_dims=frozenset()
+    ] io
+    iq:bf16[1,2048,1024] = add hn ip
+    ir:bf16[1,2048,1024] = sharding_constraint[
+      context_mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None)
+      layout=None
+      sharding=NamedSharding(mesh=AbstractMesh('diloco': 1, 'data': 1, 'stage': 1, 'fsdp': 1, 'fsdp_transpose': 1, 'context': 1, 'context_autoregressive': 1, 'tensor': 1, 'tensor_transpose': 1, 'tensor_sequence': 1, 'expert': 1, 'autoregressive': 1, axis_types=(Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto), device_kind=cpu, num_cores=None), spec=P(('data', 'fsdp', 'fsdp_transpose', 'expert'), ('tensor_sequence', 'context'), ('tensor', 'tensor_transpose')))
+      unconstrained_dims=frozenset()
+    ] iq
+  in (ir, f) }, ())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/maxtext/src/maxtext/layers/nnx_wrappers.py", line 518, in __call__
+    out = method_fn(module, *args, **kwargs)
+  File "/content/maxtext/src/maxtext/models/qwen3.py", line 1520, in __call__
+    hidden_states, intermediate_inputs, kv_cache = self.apply_attention_with_norm(
+  File "/content/maxtext/src/maxtext/models/qwen3.py", line 1457, in apply_attention_with_norm
+    attention_lnx, kv_cache = self.self_attention(
+  File "/content/maxtext/src/maxtext/layers/nnx_wrappers.py", line 376, in wrapped
+    return call_fn(*args, **kwargs)
+  File "/content/maxtext/src/maxtext/layers/attentions.py", line 1224, in __call__
+    out = self.attention_op(
+  File "/content/maxtext/src/maxtext/layers/nnx_wrappers.py", line 376, in wrapped
+    return call_fn(*args, **kwargs)
+  File "/content/maxtext/src/maxtext/layers/attention_op.py", line 2099, in __call__
+    prefill_unnormalized_output, prefill_exponentials_max, prefill_exponentials_sum = self.apply_attention(
+  File "/content/maxtext/src/maxtext/layers/attention_op.py", line 1028, in apply_attention
+    out = gpu_pallas_attention.mha(query, key, value, decoder_segment_ids, sm_scale=1.0, causal=True)
+jax._src.source_info_util.JaxStackTraceBeforeTransformation: ValueError: Only interpret mode is supported on CPU backend.
+
+The preceding stack trace is the source of the JAX operation that, once transformed by JAX, triggered the following exception.
+
+--------------------
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/content/maxtext/src/maxtext/trainers/pre_train/train.py", line 818, in <module>
+    app.run(main)
+  File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 367, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.12/dist-packages/absl/app.py", line 312, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/content/maxtext/src/maxtext/trainers/pre_train/train.py", line 814, in main
+    train_func()
+  File "/content/maxtext/src/maxtext/trainers/pre_train/train.py", line 804, in train_func
+    run(config, recorder)
+  File "/content/maxtext/src/maxtext/trainers/pre_train/train.py", line 774, in run
+    train_loop(config, recorder)
+  File "/content/maxtext/src/maxtext/trainers/pre_train/train.py", line 643, in train_loop
+    compiled = p_train_step.lower(*lower_args).compile(compiler_options=compiler_options)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/jax/_src/pallas/pallas_call.py", line 1201, in _pallas_call_lowering
+    return mlir.lower_per_platform(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/jax/_src/pallas/pallas_call.py", line 1140, in cpu_lowering
+    raise ValueError("Only interpret mode is supported on CPU backend.")
+ValueError: Only interpret mode is supported on CPU backend.
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
